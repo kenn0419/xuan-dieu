@@ -3,7 +3,7 @@ import heroImage from "../assets/images/hero_section_image.png";
 import StatsSection from "./StatsSection";
 
 const HeroSection = () => (
-  <section className="p-10 bg-gradient-to-r from-[#0f0f2d] via-[#1b1530] to-[#0f0f2d] pt-[86px]">
+  <section className="bg-gradient-to-r from-[#0f0f2d] via-[#1b1530] to-[#0f0f2d] pt-[86px] relative">
     <div className="space-y-6 mt-6 w-[1300px] mx-auto">
       <h1 className="text-8xl font-semibold leading-snug text-center flex flex-col relative font-geologica">
         <span>
@@ -23,20 +23,24 @@ const HeroSection = () => (
           </span>
         </span>
       </h1>
-      <div>
-        <p className="text-sm max-w-md">
-          Virtual events that are hosted online with the potential of attendees
-          to view or participate from anywhere.
+      <div className="mt-5">
+        <p className="text-sm max-w-md text-[#87899D] mb-4 text-justify">
+          Virtual events are events that are completely hosted and run online
+          with the potential for attendees to view or participate from anywhere
+          in the world.
         </p>
-        <button className="bg-primary px-6 py-2 rounded text-sm">
+        <button className="bg-primary px-12 py-4 rounded-3xl text-sm text-white cursor-pointer">
           Explore now →
         </button>
       </div>
-      <div>
-        <StatsSection />
-      </div>
     </div>
-    {/* <img src={heroImage} alt="VR Person" className="h-[800px] object-cover" /> */}
+    <div className="bg-[#1E1F33] w-7xl h-[150px] mt-10"></div>
+    <StatsSection />
+    <img
+      src={heroThumbnail}
+      alt="VR Person"
+      className="h-[800px] object-cover absolute bottom-0 right-[100px]"
+    />
   </section>
 );
 

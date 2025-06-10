@@ -21,7 +21,7 @@ const FeaturesSection = () => {
     <section className="py-20 px-6 bg-gradient-to-br from-black to-purple-900">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-5xl font-bold text-white mb-16">
-          Our <span className="text-orange-500">Features</span>
+          Our <span className="text-orange-500">Our Features</span>
         </h2>
         <p className="text-lg text-gray-300 mb-12 max-w-3xl mx-auto">
           See a collectible your friend can easily obtain, know about the NFT,

@@ -14,22 +14,6 @@ const ExploreEventsSection = () => {
           Explore our <span className="text-orange-500">Virtual Events</span>
         </h2>
 
-        {/* Event Categories - adjust as needed */}
-        <div className="flex justify-center space-x-8 mb-12">
-          <button className="text-white text-lg font-semibold border-b-2 border-orange-500 pb-2">
-            Trending Events
-          </button>
-          <button className="text-gray-400 text-lg hover:text-white pb-2">
-            Trending Events
-          </button>
-          <button className="text-gray-400 text-lg hover:text-white pb-2">
-            Trending Events
-          </button>
-          <button className="text-gray-400 text-lg hover:text-white pb-2">
-            Trending Events
-          </button>
-        </div>
-
         {/* Event Carousel */}
         <div className="relative">
           <div className="flex overflow-x-scroll scrollbar-hide space-x-6 p-4">
