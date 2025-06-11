@@ -18,27 +18,28 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-black to-purple-900">
+    <section className="py-20 px-6 bg-gradient-to-br from-black to-[#05112D]">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-5xl font-bold text-white mb-16">
-          Our <span className="text-orange-500">Our Features</span>
+        <h2 className="text-6xl font-medium text-white mb-10 font-montserrat">
+          Our Features
         </h2>
-        <p className="text-lg text-gray-300 mb-12 max-w-3xl mx-auto">
-          See a collectible your friend can easily obtain, know about the NFT,
-          and obtain it directly using flat currency or Cryptocurrency. VIVE
-          Market currently accepts payments via credit card or MetaMask.
+        <p className="text-base text-gray-300 mb-12 max-w-4xl mx-auto">
+          See a collectible you love? You can easily learn more about the NFT
+          and buy it directly using fiat currency or cryptocurrency. VIVE Market
+          currently accepts payments via credit card or MetaMask.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 bg-opacity-70 p-8 rounded-lg shadow-lg text-left transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <h3 className="text-2xl font-semibold text-white mb-4">
+        <div className="flex justify-center items-start gap-6 px-4 py-10">
+          {features.map((feature) => (
+            <div className="group relative w-[280px] bg-gradient-to-b from-[#1b1a25] to-[#0f0e17] text-white p-6 pt-14 polygon-card shadow-lg text-center">
+              {/* Icon */}
+              <div className="absolute top-[-30px] left-1/2 -translate-x-1/2 w-[60px] h-[60px] rounded-full bg-orange-500 flex items-center justify-center shadow-md">
                 {feature.title}
-              </h3>
-              <p className="text-gray-300">{feature.description}</p>
+              </div>
+
+              {/* Content */}
+              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+              <p className="text-sm text-gray-300">{feature.description}</p>
             </div>
           ))}
         </div>

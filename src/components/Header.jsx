@@ -1,11 +1,11 @@
 const Header = () => (
-  <header className="bg-[bg-[rgba(255,255,255,0.8)] fixed top-0 left-0 right-0 z-50 py-2 shadow-lg">
+  <header className="bg-transparent fixed top-0 left-0 right-0 z-50 py-2 shadow-2xl">
     <div className="w-[1500px] mx-auto flex justify-between items-center px-6 py-4">
       <nav className="flex gap-6 text-base">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Trending</a>
-        <a href="#">Contact</a>
+        <a href="#footer">Contact</a>
       </nav>
       <div className="text-2xl font-medium">
         Events<span className="text-primary">.</span>

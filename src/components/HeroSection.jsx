@@ -4,6 +4,9 @@ import StatsSection from "./StatsSection";
 
 const HeroSection = () => (
   <section className="bg-gradient-to-r from-[#0f0f2d] via-[#1b1530] to-[#0f0f2d] pt-[86px] relative">
+    <div className="absolute top-0 left-0 w-100 h-70 bg-[#116491] opacity-70 blur-[100px] rounded-full pointer-events-none z-0"></div>
+    <div className="absolute top-1/4 left-1/2 w-100 h-70 bg-primary opacity-40 blur-[100px] rounded-full pointer-events-none z-0"></div>
+    <div className="absolute top-1/2 right-0 w-100 h-150 bg-[#116491] opacity-70 blur-[100px] rounded-full pointer-events-none z-0"></div>
     <div className="space-y-6 mt-6 w-[1300px] mx-auto">
       <h1 className="text-8xl font-semibold leading-snug text-center flex flex-col relative font-geologica">
         <span>

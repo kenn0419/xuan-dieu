@@ -1,92 +1,104 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 py-16 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-400">
-        {/* Section 1: Events */}
-        <div>
-          <h3 className="text-white text-xl font-semibold mb-6">Events</h3>
-          <p className="mb-4">Your gateway to the world of Web3.</p>
-          <div className="flex space-x-4">
-            {/* Social Media Icons - replace with actual icons */}
-            <a href="#" className="hover:text-white transition duration-300">
-              <i className="fab fa-facebook-f"></i>{" "}
-              {/* Example: Use Font Awesome */}
-            </a>
-            <a href="#" className="hover:text-white transition duration-300">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="hover:text-white transition duration-300">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
+    <footer
+      id="footer"
+      className="bg-gradient-to-br from-black to-[#05112D] h-[500px] text-text-light px-16 flex gap-4 relative"
+    >
+      <div className="absolute bottom-0 left-0 w-65 h-70 bg-orange-400 opacity-25 blur-[100px] rounded-full pointer-events-none z-0"></div>
 
-        {/* Section 2: Our Events */}
-        <div>
-          <h3 className="text-white text-xl font-semibold mb-6">Our Events</h3>
-          <ul>
-            <li className="mb-3">
-              <a href="#" className="hover:text-white transition duration-300">
-                Tech Conference
-              </a>
-            </li>
-            <li className="mb-3">
-              <a href="#" className="hover:text-white transition duration-300">
-                Art Exhibition
-              </a>
-            </li>
-            <li className="mb-3">
-              <a href="#" className="hover:text-white transition duration-300">
-                Concert
-              </a>
-            </li>
-            <li className="mb-3">
-              <a href="#" className="hover:text-white transition duration-300">
-                Fun Party
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Section 3: Company */}
-        <div>
-          <h3 className="text-white text-xl font-semibold mb-6">Company</h3>
-          <ul>
-            <li className="mb-3">
-              <a href="#" className="hover:text-white transition duration-300">
-                About Us
-              </a>
-            </li>
-            <li className="mb-3">
-              <a href="#" className="hover:text-white transition duration-300">
-                Contact Us
-              </a>
-            </li>
-            <li className="mb-3">
-              <a href="#" className="hover:text-white transition duration-300">
-                Support
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Section 4: Contact */}
-        <div>
-          <h3 className="text-white text-xl font-semibold mb-6">Contact</h3>
-          <p className="mb-3">
-            <i className="fas fa-map-marker-alt mr-2"></i>{" "}
-            {/* Example: Use Font Awesome */}
-            02/100, M.P. Nagar, Ujjain, India
-          </p>
-          <p className="mb-3">
-            <i className="fas fa-envelope mr-2"></i>
-            metaventurer001@gmail.com
-          </p>
-        </div>
+      <div className="border-l border-[#291C27] pt-16 relative">
+        <h3 className="text-3xl font-medium mb-4">Events.</h3>
+        <p className="text-sm">Your seamless gateway to the world of Web3.</p>
+        <p className="text-xs mt-8 font-medium absolute bottom-5 left-0 pl-8">
+          2021 All Right Reserved
+        </p>
       </div>
 
-      <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
-        <p>&copy; 2024 All Right Reserved</p>
+      <div className="border-l border-[#291C27] pt-16">
+        <h3 className="text-xl font-medium mb-4 border-l-2 border-primary px-3">
+          Our Events
+        </h3>
+        <ul className="space-y-2 text-sm px-3 flex flex-col gap-5 mt-6">
+          <li>
+            <a href="#" className="hover:text-white">
+              Corporate Event
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-white">
+              Festival
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-white">
+              Celebration
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-white">
+              Meeting
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-white">
+              Fun Party
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="border-l border-[#291C27] pt-16">
+        <h3 className="text-xl font-medium mb-4 border-l-2 border-primary px-3">
+          Company
+        </h3>
+        <ul className="space-y-2 text-sm flex flex-col gap-5 mt-6 px-3">
+          <li>
+            <a href="#" className="hover:text-white">
+              Our Team
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-white">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-white">
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-white">
+              Career?
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="border-x border-[#291C27] pt-16">
+        <h3 className="text-xl font-medium mb-4 border-l-2 border-primary px-3">
+          Contact
+        </h3>
+        <ul className="space-y-2 text-sm flex flex-col gap-5 mt-6 px-3">
+          <li>
+            <a
+              href="https://instagram.com/nishar_UIUX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
+              Instagram/nishar_UIUX
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:nisharmuftani007@gmail.com"
+              className="hover:text-white"
+            >
+              nisharmuftani007@gmail.com
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   );
