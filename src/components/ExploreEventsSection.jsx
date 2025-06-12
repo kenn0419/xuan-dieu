@@ -8,7 +8,22 @@ const ExploreEventsSection = () => {
           Explore our Virtual Events
         </h2>
         <EventSlider />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[150px] border border-white/20 rounded-full blur-[1px]"></div>
+        <svg
+          width="100%"
+          height="160px"
+          viewBox="0 0 700 160"
+          className="absolute bottom-0"
+        >
+          <ellipse
+            cx="350"
+            cy="80"
+            rx="350"
+            ry="30"
+            stroke="#888"
+            fill="none"
+            strokeWidth="1"
+          />
+        </svg>
       </div>
     </section>
   );

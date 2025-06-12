@@ -5,11 +5,10 @@ import FeaturesSection from "./components/FeaturesSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import StatsSection from "./components/StatsSection";
 
 function App() {
   return (
-    <div className="text-white bg-gradient-to-br from-black to-purple-900 min-h-screen relative">
+    <div className="text-white bg-gradient-to-br from-black to-purple-900 min-h-screen relative scroll-smooth">
       <Header />
       <HeroSection />
       <BuildMetaverseSection />

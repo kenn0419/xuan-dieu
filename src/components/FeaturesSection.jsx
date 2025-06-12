@@ -1,19 +1,25 @@
+import { MdEmojiEvents } from "react-icons/md";
+import { SiEventbrite, SiEventstore } from "react-icons/si";
+
 const FeaturesSection = () => {
   const features = [
     {
+      icon: MdEmojiEvents,
       title: "Event Posting",
       description:
-        "You can easily post about an event just with one click. Simply fill all the details on the form on our platform, and it is ready to be published.",
+        "We build websites based on client needs and of course the target market, because that's our expertise",
     },
     {
+      icon: SiEventstore,
       title: "Event Management",
       description:
-        "It is a platform for event managers, where we offer a single and centralized view of all the events. This saves a lot of time and effort for event managers.",
+        "It's undeniable, everyone now has a smartphone, and of course we can also make your product app",
     },
     {
+      icon: SiEventbrite,
       title: "Event Marketing",
       description:
-        "We are aware of the importance of event marketing; hence we offer an event marketing tool for event organizers. Our tool can help you to sell more tickets to your events.",
+        "We are aware of the importance of design before making a product, that's why we provide our best service",
     },
   ];
 
@@ -23,23 +29,32 @@ const FeaturesSection = () => {
         <h2 className="text-6xl font-medium text-white mb-10 font-montserrat">
           Our Features
         </h2>
-        <p className="text-base text-gray-300 mb-12 max-w-4xl mx-auto">
+        <p className="text-base text-gray-300 mb-12 max-w-[800px] mx-auto">
           See a collectible you love? You can easily learn more about the NFT
           and buy it directly using fiat currency or cryptocurrency. VIVE Market
           currently accepts payments via credit card or MetaMask.
         </p>
 
-        <div className="flex justify-center items-start gap-6 px-4 py-10">
-          {features.map((feature) => (
-            <div className="group relative w-[280px] bg-gradient-to-b from-[#1b1a25] to-[#0f0e17] text-white p-6 pt-14 polygon-card shadow-lg text-center">
-              {/* Icon */}
-              <div className="absolute top-[-30px] left-1/2 -translate-x-1/2 w-[60px] h-[60px] rounded-full bg-orange-500 flex items-center justify-center shadow-md">
-                {feature.title}
+        <div className="flex justify-center items-start gap-6 px-4 py-10 shadow-md">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className={`group relative w-1/3 h-[500px] bg-gradient-to-tr from-[#2b1e29] to-[#141321] 
+            text-white p-6 pt-20 flex flex-col items-center clip-card`}
+            >
+              {index == 1 && (
+                <div
+                  className="absolute -bottom-0 left-1/2 -translate-x-1/2 w-full h-1 z-20 rounded-full 
+                  bg-gradient-to-r from-[#02081C] via-[#FD9308] to-[#02081C] pointer-events-none"
+                ></div>
+              )}
+              <div className="w-[80px] h-[80px] mb-20 rounded-full bg-orange-500 flex items-center justify-center shadow-md">
+                {<feature.icon color="white" size={35} />}
               </div>
-
-              {/* Content */}
-              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-              <p className="text-sm text-gray-300">{feature.description}</p>
+              <h3 className="text-2xl font-medium mb-16">{feature.title}</h3>
+              <p className="text-sm text-gray-300 max-w-4/5 mx-auto">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
