@@ -1,14 +1,21 @@
+import { FaArrowRightLong } from "react-icons/fa6";
 import heroThumbnail from "../assets/images/hero_section.png";
+import heroBackground from "../assets/images/hero_section_bg.jpg";
 import heroImage from "../assets/images/hero_section_image.png";
 import StatsSection from "./StatsSection";
 
 const HeroSection = () => (
   <section className="bg-gradient-to-r from-[#0f0f2d] via-[#1b1530] to-[#0f0f2d] pt-[86px] relative">
-    <div className="absolute top-0 left-0 w-100 h-70 bg-[#116491] opacity-70 blur-[100px] rounded-full pointer-events-none z-0"></div>
-    <div className="absolute top-1/4 left-1/2 w-100 h-70 bg-primary opacity-40 blur-[100px] rounded-full pointer-events-none z-0"></div>
-    <div className="absolute top-1/2 right-0 w-100 h-150 bg-[#116491] opacity-70 blur-[100px] rounded-full pointer-events-none z-0"></div>
-    <div className="space-y-6 mt-6 w-[1300px] mx-auto">
-      <h1 className="text-8xl font-semibold leading-snug text-center flex flex-col relative font-geologica">
+    <div className="hidden xl:absolute top-0 left-0 w-100 h-70 bg-[#116491] opacity-70 blur-[100px] rounded-full pointer-events-none z-0"></div>
+    <div className="hidden xl:absolute top-1/4 left-1/2 w-100 h-70 bg-primary opacity-40 blur-[100px] rounded-full pointer-events-none z-0"></div>
+    <div className="hidden xl:absolute top-1/2 right-0 w-100 h-150 bg-[#116491] opacity-70 blur-[100px] rounded-full pointer-events-none z-0"></div>
+    <div className="space-y-6 mt-6 w-4/5 xl:w-[1300px] mx-auto">
+      <img
+        src={heroBackground}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+      />
+      <h1 className="lg:text-8xl text-4xl font-semibold leading-snug text-center flex flex-col relative font-geologica">
         <span>
           Largest <span className="text-primary">★</span> Virtual
         </span>
@@ -17,32 +24,33 @@ const HeroSection = () => (
         </span>
         <span>
           Company
-          <span className="absolute bottom-6 left-1/5">
+          <span className="absolute left-0 bottom-2 lg:bottom-6 lg:left-1/5">
             <img
               src={heroImage}
               alt="Hero image"
-              className="w-[150px] object-contain"
+              className="lg:w-[150px] w-20 object-contain"
             />
           </span>
         </span>
       </h1>
-      <div className="mt-5">
+      {/* <div className="mt-5 flex flex-col items-center lg:block bg">
         <p className="text-sm max-w-md text-[#87899D] mb-4 text-justify">
           Virtual events are events that are completely hosted and run online
           with the potential for attendees to view or participate from anywhere
           in the world.
         </p>
-        <button className="bg-primary px-12 py-4 rounded-3xl text-sm text-white cursor-pointer">
-          Explore now →
+        <button className="bg-orange-500 px-12 py-4 rounded-3xl text-sm text-black font-medium cursor-pointer flex gap-1 items-center">
+          Explore now
+          <FaArrowRightLong size={18} />
         </button>
-      </div>
+      </div> */}
     </div>
-    <div className="bg-[#1E1F33] w-7xl h-[150px] mt-10"></div>
+    <div className="bg-[#1E1F33] w-full xl:w-5xl h-[150px] mt-10"></div>
     <StatsSection />
     <img
       src={heroThumbnail}
       alt="VR Person"
-      className="h-[800px] object-cover absolute bottom-0 right-[100px]"
+      className="xl:h-[800px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-[100px] -right-5"
     />
   </section>
 );

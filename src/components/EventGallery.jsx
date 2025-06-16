@@ -6,16 +6,33 @@ const EventGallery = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-6xl font-medium text-white mb-12">Event Gallary</h2>
-
+        <h2 className="text-5xl lg:text-6xl font-medium text-white mb-12">
+          Event Gallery
+        </h2>
         <div className="flex flex-col gap-10">
-          <div className="flex gap-10 h-[300px]">
-            <img src={galary3} className="w-1/2" alt="" />
-            <img src={galary2} className="w-1/2" alt="" />
+          <div className="flex flex-col lg:flex-row justify-between gap-5">
+            <img
+              src={galary3}
+              className="lg:w-1/2 h-[300px] object-cover rounded-xl"
+              alt=""
+            />
+            <img
+              src={galary2}
+              className="lg:w-1/2 h-[300px] object-cover rounded-xl"
+              alt=""
+            />
           </div>
-          <div className="flex gap-5 h-[300px]">
-            <img src={galary4} className="w-1/3" alt="" />
-            <img src={galary1} className="w-2/3" alt="" />
+          <div className="flex flex-col lg:flex-row gap-5">
+            <img
+              src={galary4}
+              className="lg:w-1/3 h-[300px] object-cover rounded-xl"
+              alt=""
+            />
+            <img
+              src={galary1}
+              className="lg:w-2/3 h-[300px] object-cover rounded-xl"
+              alt=""
+            />
           </div>
         </div>
       </div>

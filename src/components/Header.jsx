@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
+import { IoMenu } from "react-icons/io5";
+import logo from "../assets/images/XD01.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [show, setShow] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showBackGroundHeader, setShowBackGroundHeader] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShow(true);
+      if (window.scrollY) {
+        setShowBackGroundHeader(true);
       } else {
-        setShow(false);
+        setShowBackGroundHeader(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -18,25 +22,30 @@ const Header = () => {
   }, []);
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 py-2 shadow-2xl ${
-        show ? "bg-black" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-[99] shadow-2xl ${
+        showBackGroundHeader ? "bg-black" : "bg-transparent"
       }`}
     >
-      <div className="w-[1500px] mx-auto flex justify-between items-center px-6 py-4">
-        <nav className="flex gap-6 text-base">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Trending</a>
-          <a href="#footer">Contact</a>
+      <div className="xl:w-[1500px] md:w-full lg:w-full mx-auto flex justify-between items-center px-6 py-2">
+        <Link to={`/`}>
+          <img src={logo} alt="XD MEDIA" className="w-25" />
+        </Link>
+        <nav className="hidden xl:flex gap-6 text-xl items-center">
+          <Link to={`/`}>Trang Chủ</Link>
+          <a href="#">Giới Thiệu</a>
+          <a href="#">Xu Hướng</a>
+          <Link
+            to={`/team`}
+            className="px-4 py-2 relative rounded-md border border-primary hover:bg-primary"
+          >
+            Liên Hệ
+          </Link>
         </nav>
-        <div className="text-2xl font-medium">
-          Events<span className="text-primary">.</span>
-        </div>
-        <div className="flex gap-6">
-          <button className="text-sm cursor-pointer">Sign In</button>
-          <button className="px-4 py-2 border text-sm cursor-pointer">
-            Get Started
-          </button>
+
+        <div className="lg:hidden">
+          <span className="cursor-pointer">
+            <IoMenu size={30} color="black" />
+          </span>
         </div>
       </div>
     </header>

@@ -45,7 +45,6 @@ const EventSlider = () => {
           effect={"coverflow"} // Hiệu ứng 3D như hình
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={3}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -60,6 +59,14 @@ const EventSlider = () => {
           navigation={{
             prevEl: ".swiper-button-prev-custom",
             nextEl: ".swiper-button-next-custom",
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
           }}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="mySwiper h-[450px]"

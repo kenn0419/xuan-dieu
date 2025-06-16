@@ -26,7 +26,7 @@ const FeaturesSection = () => {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-black to-[#05112D]">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-6xl font-medium text-white mb-10 font-montserrat">
+        <h2 className="text-5xl lg:text-6xl font-medium text-white mb-10 font-montserrat">
           Our Features
         </h2>
         <p className="text-base text-gray-300 mb-12 max-w-[800px] mx-auto">
@@ -35,11 +35,11 @@ const FeaturesSection = () => {
           currently accepts payments via credit card or MetaMask.
         </p>
 
-        <div className="flex justify-center items-start gap-6 px-4 py-10 shadow-md">
+        <div className="flex justify-center flex-col lg:flex-row gap-6 px-4 py-10 shadow-md">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`group relative w-1/3 h-[500px] bg-gradient-to-tr from-[#2b1e29] to-[#141321] 
+              className={`group relative lg:w-1/3 h-[500px] bg-gradient-to-tr from-[#2b1e29] to-[#141321] 
             text-white p-6 pt-20 flex flex-col items-center clip-card`}
             >
               {index == 1 && (
