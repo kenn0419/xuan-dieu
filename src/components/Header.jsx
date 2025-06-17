@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
-import logo from "../assets/images/XD01.png";
+import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
         showBackGroundHeader ? "bg-black" : "bg-transparent"
       }`}
     >
-      <div className="xl:w-[1500px] md:w-full lg:w-full mx-auto flex justify-between items-center px-6 py-2">
+      <div className="xl:w-[1200px] md:w-full lg:w-full mx-auto flex justify-between items-center py-2">
         <Link to={`/`}>
           <img src={logo} alt="XD MEDIA" className="w-25" />
         </Link>
@@ -34,8 +34,9 @@ const Header = () => {
           <Link to={`/`}>Trang Chủ</Link>
           <a href="#">Giới Thiệu</a>
           <a href="#">Xu Hướng</a>
+          <Link to={`/teams`}>Thành viên</Link>
           <Link
-            to={`/team`}
+            to={`/`}
             className="px-4 py-2 relative rounded-md border border-primary hover:bg-primary"
           >
             Liên Hệ

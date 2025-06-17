@@ -42,7 +42,8 @@ const EventSlider = () => {
       </div>
       <div className="max-w-7xl mx-auto">
         <Swiper
-          effect={"coverflow"} // Hiệu ứng 3D như hình
+          id="event_slider"
+          effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
           coverflowEffect={{

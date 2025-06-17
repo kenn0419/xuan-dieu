@@ -27,7 +27,7 @@ const TrendingEventsSlider = () => {
     <div className="relative w-full overflow-hidden py-10">
       <div className="transform -rotate-2 bg-gradient-to-r from-[#31191D] to-[#4F1E18]">
         <div className="flex justify-center relative before:absolute after:absolute before:left-0 after:right-0 before:w-40 after:w-40 before:z-10 after:z-10 before:top-0 after:top-0 before:h-full after:h-full before:bg-gradient-to-r before:from-[#31191D] before:to-transparent after:bg-gradient-to-l after:from-[#31191D] after:to-transparent">
-          <div className="w-[1400px] mx-auto">
+          <div className="w-full">
             <Swiper
               modules={[Autoplay, FreeMode]}
               slidesPerView="auto"

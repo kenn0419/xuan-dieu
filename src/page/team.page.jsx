@@ -45,7 +45,7 @@ const teamMembers = [
 const TeamPage = () => {
   return (
     <section className="bg-gradient-to-r from-[#0f0f2d] via-[#1b1530] to-[#0f0f2d] py-30">
-      <div className=" w-[1500px] mx-auto">
+      <div className="w-[1200px] mx-auto">
         <h2 className="my-4">Our team</h2>
         <h2 className="flex flex-col text-5xl gap-3 mb-10">
           <span>Meet our Team</span>
@@ -99,7 +99,7 @@ const TeamPage = () => {
             }}
             loop={true}
             spaceBetween={30}
-            className="!h-[800px]"
+            className="!h-[600px]"
           >
             {teamMembers.map((member) => (
               <SwiperSlide key={member.id}>

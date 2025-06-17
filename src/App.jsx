@@ -7,10 +7,9 @@ import TeamPage from "./page/team.page";
 
 const AppContent = () => {
   return (
-    <div className="text-white bg-gradient-to-br from-black to-purple-900 min-h-screen relative scroll-smooth">
+    <div className="text-white bg-gradient-to-br from-black to-purple-900 relative">
       <Header />
       <Outlet />
-
       <Footer />
     </div>
   );
@@ -23,7 +22,7 @@ function App() {
       element: <AppContent />,
       children: [
         { index: true, element: <HomePage /> },
-        { path: "/team", element: <TeamPage /> },
+        { path: "/teams", element: <TeamPage /> },
       ],
     },
   ]);
