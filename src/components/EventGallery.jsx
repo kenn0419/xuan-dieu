@@ -5,7 +5,7 @@ import galary4 from "../assets/images/event_galery_4.jpg";
 const EventGallery = () => {
   return (
     <section className="py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="w-6xl mx-auto text-center">
         <h2 className="text-5xl lg:text-6xl font-medium text-white mb-12">
           Event Gallery
         </h2>

@@ -51,7 +51,7 @@ const HeroSection = () => (
     <img
       src={heroThumbnail}
       alt="VR Person"
-      className="xl:h-[800px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-[100px] -right-5 animate-run"
+      className="xl:h-[600px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-[100px] -right-5 animate-run"
     />
     {/* <video autoPlay loop muted playsInline className="bg-transparent">
       <source src={robotVideo} type="video/webm" />

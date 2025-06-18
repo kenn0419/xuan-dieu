@@ -4,7 +4,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* --with-main: "1200px"; */
   --font-sans: "Poppins", sans-serif;
   --font-geologica: "Geologica", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
