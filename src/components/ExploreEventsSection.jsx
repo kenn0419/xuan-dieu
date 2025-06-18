@@ -3,7 +3,7 @@ import EventSlider from "./EventSlider";
 const ExploreEventsSection = () => {
   return (
     <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto relative">
+      <div className="w-7xl mx-auto relative">
         <h2 className="text-6xl font-medium font-montserrat text-white text-center mb-12">
           Explore our Virtual Events
         </h2>

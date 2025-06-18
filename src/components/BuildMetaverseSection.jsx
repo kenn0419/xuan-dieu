@@ -5,7 +5,7 @@ import TrendingEventsSlider from "./TrendingEventSlider";
 const BuildMetaverseSection = () => {
   return (
     <section className="py-20 relative">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+      <div className="w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="flex justify-center mb-10 md:mb-0">
           <img
             src={sectionThumbnail}

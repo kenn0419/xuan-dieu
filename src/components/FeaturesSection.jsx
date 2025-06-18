@@ -25,11 +25,11 @@ const FeaturesSection = () => {
 
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-black to-[#05112D]">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="w-7xl mx-auto text-center">
         <h2 className="text-5xl lg:text-6xl font-medium text-white mb-10 font-montserrat">
           Our Features
         </h2>
-        <p className="text-base text-gray-300 mb-12 max-w-[800px] mx-auto">
+        <p className="text-base text-gray-300 mb-12 w-[800px] mx-auto">
           See a collectible you love? You can easily learn more about the NFT
           and buy it directly using fiat currency or cryptocurrency. VIVE Market
           currently accepts payments via credit card or MetaMask.
@@ -52,7 +52,7 @@ const FeaturesSection = () => {
                 {<feature.icon color="white" size={35} />}
               </div>
               <h3 className="text-2xl font-medium mb-16">{feature.title}</h3>
-              <p className="text-sm text-gray-300 max-w-4/5 mx-auto">
+              <p className="text-sm text-gray-300 w-4/5 mx-auto">
                 {feature.description}
               </p>
             </div>

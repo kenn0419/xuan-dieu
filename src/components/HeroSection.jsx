@@ -1,5 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import heroThumbnail from "../assets/images/hero_section.png";
+import heroThumbnail from "../assets/images/hero_thumbnail.png";
+import robotVideo from "../assets/videos/robot_vd.mp4";
 import heroBackground from "../assets/images/hero_section_bg.jpg";
 import heroImage from "../assets/images/hero_section_image.png";
 import StatsSection from "./StatsSection";
@@ -34,7 +35,7 @@ const HeroSection = () => (
         </span>
       </h1>
       {/* <div className="mt-5 flex flex-col items-center lg:block bg">
-        <p className="text-sm max-w-md text-[#87899D] mb-4 text-justify">
+        <p className="text-sm w-md text-[#87899D] mb-4 text-justify">
           Virtual events are events that are completely hosted and run online
           with the potential for attendees to view or participate from anywhere
           in the world.
@@ -45,13 +46,16 @@ const HeroSection = () => (
         </button>
       </div> */}
     </div>
-    <div className="bg-[#1E1F33] w-full xl:w-5xl h-[150px] mt-10"></div>
+    <div className="bg-[#1E1F33] w-full xl:w-7xl h-[150px] mt-10"></div>
     <StatsSection />
     <img
       src={heroThumbnail}
       alt="VR Person"
-      className="xl:h-[800px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-[100px] -right-5"
+      className="xl:h-[800px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-[100px] -right-5 animate-run"
     />
+    {/* <video autoPlay loop muted playsInline className="bg-transparent">
+      <source src={robotVideo} type="video/webm" />
+    </video> */}
   </section>
 );
 

@@ -52,7 +52,7 @@ const TeamPage = () => {
           <span className="text-primary">Passionate.Proactive.Expert</span>
         </h2>
         <div className="flex items-center justify-between">
-          <p className="text-lg max-w-xl">
+          <p className="text-lg w-xl">
             We lead with care our core value and a shared passion for connecting
             the world
           </p>

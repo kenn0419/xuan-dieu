@@ -4,21 +4,13 @@
 @import "tailwindcss";
 
 @theme {
-  --with-main: "1200px";
+  /* --with-main: "1200px"; */
   --font-sans: "Poppins", sans-serif;
   --font-geologica: "Geologica", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
   --color-primary: #ff6d10;
   --color-dark: #0f0f2d;
   --color-violet: #5b3cc4;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 #footer > div {
@@ -31,4 +23,20 @@
 
 #trending_event_slider .swiper-wrapper {
   justify-content: space-between;
+}
+
+@keyframes runInPlace {
+  0% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+}
+
+.animate-run {
+  animation: runInPlace 0.3s infinite;
 }
