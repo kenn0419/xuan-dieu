@@ -83,7 +83,7 @@ const TrendingEventsSlider = () => {
                   <img
                     src={event.iconSrc}
                     alt="Trending Image"
-                    className="w-20 h-20 rounded-full object-cover"
+                    className="w-15 h-15 rounded-full object-cover"
                   />
                   <p className="text-white font-semibold text-xl whitespace-nowrap">
                     {event.title}

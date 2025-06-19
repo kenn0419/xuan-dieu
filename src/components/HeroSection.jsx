@@ -47,7 +47,7 @@ const HeroSection = () => (
         </button>
       </div> */}
     </div>
-    <div className="bg-[#1E1F33] w-full xl:w-7xl h-[150px] mt-10 "></div>
+    <div className="bg-gradient-to-r from-[#1E1F33] to-black/40 w-full xl:w-7xl shadow-r-md h-[150px] mt-10 "></div>
     <img
       src={robotLeftThumbnail}
       alt="VR Person"

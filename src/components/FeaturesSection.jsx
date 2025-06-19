@@ -45,15 +45,9 @@ const FeaturesSection = () => {
               className={`group relative lg:w-1/3 h-[500px] bg-gradient-to-tr from-[#2b1e29] to-[#141321] 
             text-white p-6 pt-20 flex flex-col items-center clip-card`}
             >
-              {index == 1 && (
-                // <div
-                //   className="absolute -bottom-0 left-1/2 -translate-x-1/2 w-full h-1 z-20 rounded-full
-                //   bg-gradient-to-r from-[#02081C] via-[#c17e26] to-[#02081C] pointer-events-none"
-                // ></div>
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 rounded-full golden-bar-container">
-                  <div className="golden-bar"></div>
-                </div>
-              )}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 rounded-full golden-bar-container">
+                <div className="golden-bar"></div>
+              </div>
               <div className="w-[80px] h-[80px] mb-20 rounded-full bg-orange-500 flex items-center justify-center shadow-md">
                 {<feature.icon color="white" size={35} />}
               </div>

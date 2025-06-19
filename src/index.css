@@ -12,9 +12,9 @@
   --color-violet: #5b3cc4;
 }
 
-#footer > div {
+/* #footer > div {
   width: 25%;
-}
+} */
 
 .clip-card {
   clip-path: polygon(0 0, 50% 8%, 100% 0, 100% 100%, 0% 100%);
@@ -117,11 +117,15 @@
     to right,
     transparent 0%,
     rgba(251, 192, 45, 0.5) 10%,
-    #fbc02d 25%,
-    #fbc02d 75%,
+    #ff6d10 25%,
+    #ff6d10 75%,
     rgba(251, 192, 45, 0.5) 90%,
     transparent 100%
   );
+}
+
+.shadow-left {
+  box-shadow: 20px 0 30px -10px rgba(0, 0, 0, 0.5);
 }
 
 /* Nếu bạn muốn tạo hiệu ứng mờ hơn ở hai đầu, có thể dùng một dải màu vàng nhạt hơn */
