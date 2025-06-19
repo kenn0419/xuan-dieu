@@ -1,10 +1,12 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import sectionThumbnail from "../assets/images/Betterimage.ai_1749393457957-removebg-preview.png";
 import TrendingEventsSlider from "./TrendingEventSlider";
+import { useNavigate } from "react-router-dom";
 
 const BuildMetaverseSection = () => {
+  const navigate = useNavigate();
   return (
-    <section className="py-20 relative">
+    <section className="py-20 relative" id="introduce">
       <div className="w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="flex justify-center mb-10 md:mb-0">
           <img
@@ -24,8 +26,11 @@ const BuildMetaverseSection = () => {
             now. Stand out from the crowd and can look like anime versions of
             themselves.
           </p>
-          <button className="bg-gradient-to-br from-red-500 via-yellow-500 to-primary px-12 py-4 rounded-3xl text-sm text-black font-medium cursor-pointer flex gap-1 items-center">
-            Explore now
+          <button
+            className="bg-gradient-to-br from-red-500 to-orange-300 px-12 py-4 rounded-3xl text-sm text-black font-medium cursor-pointer flex gap-1 items-center"
+            onClick={() => navigate(`/teams`)}
+          >
+            Nhân sự
             <FaArrowRightLong size={18} />
           </button>
         </div>

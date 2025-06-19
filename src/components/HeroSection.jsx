@@ -46,7 +46,12 @@ const HeroSection = () => (
         </button>
       </div> */}
     </div>
-    <div className="bg-[#1E1F33] w-full xl:w-7xl h-[150px] mt-10"></div>
+    {/* <div className="bg-[#1E1F33] w-full xl:w-7xl h-[150px] mt-10"></div> */}
+    <img
+      src={robotThumbnail}
+      alt="VR Person"
+      className="xl:h-[300px] h-[150px] object-cover ml-32"
+    />
     <StatsSection />
     <img
       src={robotThumbnail}

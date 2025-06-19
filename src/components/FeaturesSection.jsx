@@ -24,7 +24,10 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-black to-[#05112D]">
+    <section
+      className="py-20 px-6 bg-gradient-to-br from-black to-[#05112D]"
+      id="service"
+    >
       <div className="w-7xl mx-auto text-center">
         <h2 className="text-5xl lg:text-6xl font-medium text-white mb-10 font-montserrat">
           Our Features

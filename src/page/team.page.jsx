@@ -110,10 +110,10 @@ const TeamPage = () => {
                     className="object-cover w-full"
                   />
                   <div className="p-4 text-left">
-                    <h2 className="text-3xl font-semibold text-white">
+                    <h2 className="text-2xl font-semibold text-white">
                       {member.name}
                     </h2>
-                    <p className="text-primary text-lg">{member.position}</p>
+                    <p className="text-primary text-base">{member.position}</p>
                   </div>
                 </div>
               </SwiperSlide>

@@ -96,8 +96,8 @@
 .frame-left::after,
 .frame-right::before,
 .frame-right::after {
-  background-color: yellow;
-  box-shadow: 0 0 10px yellow, 0 0 20px #bd7c28;
+  background-color: #ff6d10;
+  box-shadow: 0 0 10px #ff6d10, 0 0 20px #bd7c28;
 }
 
 /* Trong file CSS của bạn (ví dụ: styles.css) */

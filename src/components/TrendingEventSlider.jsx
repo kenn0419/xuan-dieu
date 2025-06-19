@@ -8,7 +8,7 @@ import image1 from "../assets/images/XD.jpg";
 import image2 from "../assets/images/XUNI-LogoGuideline_page-0012.jpg";
 import image3 from "../assets/images/Logo-Ong-Kinh-01.jpg";
 import image4 from "../assets/images/Gamelade_sign.jpg";
-import image5 from "../assets/images/BetterImage_1750298166648.jpeg";
+import image5 from "../assets/images/982742b6edc65a9803d7.jpg";
 const TrendingEventsSlider = () => {
   const trendingEvents = [
     // { id: 1, iconSrc: image2, title: "             " },
