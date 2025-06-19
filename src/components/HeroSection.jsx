@@ -1,6 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import heroThumbnail from "../assets/images/hero_thumbnail.png";
 import robotThumbnail from "../assets/images/robot-thumbnail.png";
+import robotLeftThumbnail from "../assets/images/a7654bdfd7ad60f339bc.png";
 import heroBackground from "../assets/images/hero_section_bg.jpg";
 import heroImage from "../assets/images/hero_section_image.png";
 import StatsSection from "./StatsSection";
@@ -46,11 +47,11 @@ const HeroSection = () => (
         </button>
       </div> */}
     </div>
-    {/* <div className="bg-[#1E1F33] w-full xl:w-7xl h-[150px] mt-10"></div> */}
+    <div className="bg-[#1E1F33] w-full xl:w-7xl h-[150px] mt-10 "></div>
     <img
-      src={robotThumbnail}
+      src={robotLeftThumbnail}
       alt="VR Person"
-      className="xl:h-[300px] h-[150px] object-cover ml-32"
+      className="xl:h-[400px] h-[150px] object-cover ml-32 absolute bottom-1/4 left-0"
     />
     <StatsSection />
     <img
