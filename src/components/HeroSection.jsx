@@ -51,13 +51,13 @@ const HeroSection = () => (
     <img
       src={robotLeftThumbnail}
       alt="VR Person"
-      className="xl:h-[400px] h-[150px] object-cover ml-32 absolute bottom-1/4 left-0"
+      className="xl:h-[400px] h-[150px] object-cover ml-32 absolute bottom-1/4 -left-20"
     />
     <StatsSection />
     <img
       src={robotThumbnail}
       alt="VR Person"
-      className="xl:h-[600px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-[100px] -right-5"
+      className="xl:h-[700px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-0 -right-5"
     />
     {/* <video autoPlay loop muted playsInline className="bg-transparent">
       <source src={robotVideo} type="video/webm" />
