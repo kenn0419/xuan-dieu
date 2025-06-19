@@ -24,7 +24,7 @@ const BuildMetaverseSection = () => {
             now. Stand out from the crowd and can look like anime versions of
             themselves.
           </p>
-          <button className="bg-primary px-12 py-4 rounded-3xl text-sm text-black font-medium cursor-pointer flex gap-1 items-center">
+          <button className="bg-gradient-to-br from-red-500 via-yellow-500 to-primary px-12 py-4 rounded-3xl text-sm text-black font-medium cursor-pointer flex gap-1 items-center">
             Explore now
             <FaArrowRightLong size={18} />
           </button>

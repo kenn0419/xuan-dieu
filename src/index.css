@@ -39,3 +39,89 @@
 .animate-run {
   animation: runInPlace 0.3s infinite;
 }
+
+.frame-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.frame-left::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 60%;
+  background-color: #bd7c28;
+}
+
+.frame-left::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 60%;
+  background-color: #bd7c28;
+}
+
+.frame-right {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.frame-right::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  height: 3px;
+  width: 60%;
+  background-color: #bd7c28;
+}
+
+.frame-right::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 3px;
+  height: 60%;
+  background-color: #bd7c28;
+}
+
+.frame-left::before,
+.frame-left::after,
+.frame-right::before,
+.frame-right::after {
+  background-color: yellow;
+  box-shadow: 0 0 10px yellow, 0 0 20px #bd7c28;
+}
+
+/* Trong file CSS của bạn (ví dụ: styles.css) */
+
+.golden-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.golden-bar {
+  width: 600px; /* Chiều dài tổng của thanh */
+  height: 5px; /* Chiều cao của thanh */
+  /* Sử dụng linear-gradient để tạo hiệu ứng chuyển màu */
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(251, 192, 45, 0.5) 10%,
+    #fbc02d 25%,
+    #fbc02d 75%,
+    rgba(251, 192, 45, 0.5) 90%,
+    transparent 100%
+  );
+}
+
+/* Nếu bạn muốn tạo hiệu ứng mờ hơn ở hai đầu, có thể dùng một dải màu vàng nhạt hơn */

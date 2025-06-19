@@ -28,7 +28,7 @@ const EventSlider = () => {
 
   return (
     <section className="py-20 px-6 relative">
-      <div className="swiper-button-prev-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full flex items-center justify-center shadow absolute top-1/2 left-[-10px]">
+      <div className="swiper-button-prev-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full flex items-center justify-center shadow absolute top-1/2 left-5">
         <svg
           fill="#000000"
           width="25px"
@@ -76,18 +76,22 @@ const EventSlider = () => {
           {slides.map((slide) => (
             <SwiperSlide
               key={slide.id}
-              className="w-[300px] md:w-[400px] lg:w-[500px] overflow-hidden shadow-lg border-[1px] border-[#817683]"
+              className="w-[300px] md:w-[400px] lg:w-[500px]"
             >
-              <img
-                src={slide.img}
-                alt={slide.alt}
-                className="w-full h-full object-cover border-[10px] border-[#291E2B]"
-              />
+              <div className="relative">
+                <div className="frame-left"></div>
+                <img
+                  src={slide.img}
+                  alt={slide.alt}
+                  className="w-full h-full object-cover border-[10px] border-[#291E2B]"
+                />
+                <div className="frame-right"></div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <div className="swiper-button-next-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full flex items-center justify-center shadow absolute top-1/2 right-0 z-50">
+      <div className="swiper-button-next-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full flex items-center justify-center shadow absolute top-1/2 -right-6 z-50">
         <svg
           fill="#000000"
           width="25px"

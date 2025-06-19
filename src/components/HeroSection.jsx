@@ -1,6 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import heroThumbnail from "../assets/images/hero_thumbnail.png";
-import robotVideo from "../assets/videos/robot_vd.mp4";
+import robotThumbnail from "../assets/images/robot-thumbnail.png";
 import heroBackground from "../assets/images/hero_section_bg.jpg";
 import heroImage from "../assets/images/hero_section_image.png";
 import StatsSection from "./StatsSection";
@@ -49,9 +49,9 @@ const HeroSection = () => (
     <div className="bg-[#1E1F33] w-full xl:w-7xl h-[150px] mt-10"></div>
     <StatsSection />
     <img
-      src={heroThumbnail}
+      src={robotThumbnail}
       alt="VR Person"
-      className="xl:h-[600px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-[100px] -right-5 animate-run"
+      className="xl:h-[600px] h-[300px] object-cover absolute bottom-[215px] xl:bottom-0 xl:right-[100px] -right-5"
     />
     {/* <video autoPlay loop muted playsInline className="bg-transparent">
       <source src={robotVideo} type="video/webm" />

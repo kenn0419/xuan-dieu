@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import logo from "../assets/images/logo.png";
+import logoThumbnail from "../assets/images/XD01.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -40,9 +41,13 @@ const Header = () => {
     >
       <div className="xl:w-[1200px] md:w-full lg:w-full mx-auto flex justify-between items-center py-2">
         <Link to={`/`} onClick={handleLogoClick}>
-          <img src={logo} alt="XD MEDIA" className="w-25" />
+          <img
+            src={logoThumbnail}
+            alt="XD MEDIA"
+            className="w-22 object-contain"
+          />
         </Link>
-        <nav className="hidden xl:flex gap-6 text-xl items-center">
+        <nav className="hidden xl:flex gap-6 text-lg items-center">
           <Link to={`/`}>Trang Chủ</Link>
           <a href="#">Giới Thiệu</a>
           <a href="#">Xu Hướng</a>
@@ -54,7 +59,9 @@ const Header = () => {
                 footer.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="px-4 py-2 relative rounded-md border border-primary hover:bg-primary cursor-pointer"
+            className="px-4 py-2 text-white font-semibold rounded-md cursor-pointer 
+             bg-transparent border border-primary transition duration-800 ease-in-out
+             hover:bg-gradient-to-br hover:from-red-500 hover:via-yellow-500 hover:to-primary hover:text-black"
           >
             Liên Hệ
           </a>
