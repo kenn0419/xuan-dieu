@@ -102,7 +102,7 @@
 
 #trending-slider::before {
   z-index: 50;
-  box-shadow: 0 0 10px #ff6d10, 0 0 20px #bd7c28;
+  box-shadow: 0 0 10px #ff6d10, 0 0 30px #bd7c28;
 }
 
 /* Trong file CSS của bạn (ví dụ: styles.css) */

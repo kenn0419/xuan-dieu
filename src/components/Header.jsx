@@ -54,7 +54,9 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-[99] shadow-2xl ${
-        showBackGroundHeader ? "bg-black" : "bg-transparent"
+        showBackGroundHeader
+          ? "bg-gradient-to-r from-red-500 to-black"
+          : "bg-transparent"
       }`}
     >
       <div className="xl:w-[1200px] md:w-full lg:w-full mx-auto flex justify-between items-center py-2">
