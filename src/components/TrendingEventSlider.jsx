@@ -56,7 +56,7 @@ const TrendingEventsSlider = () => {
   return (
     <div className="relative w-full overflow-hidden py-10">
       <div
-        className="transform -rotate-2 bg-gradient-to-br from-[#901118] to-[#521F49] before:absolute before:inset-0"
+        className="transform -rotate-2 bg-gradient-to-br from-[#901118] to-[#521F49]"
         id="trending-slider"
       >
         <div className="flex justify-center relative before:absolute after:absolute before:left-0 after:right-0 before:w-40 after:w-40 before:z-10 after:z-10 before:top-0 after:top-0 before:h-full after:h-full before:bg-gradient-to-r before:from-[#31191D] before:to-transparent after:bg-gradient-to-l after:from-[#31191D] after:to-transparent">
