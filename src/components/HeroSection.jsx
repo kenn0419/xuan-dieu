@@ -1,7 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import heroThumbnail from "../assets/images/hero_thumbnail.png";
-import robotThumbnail from "../assets/images/robot-thumbnail.png";
-import robotLeftThumbnail from "../assets/images/a7654bdfd7ad60f339bc.png";
+import robotThumbnail from "../assets/images/robot-thumbnail-left.png";
+import robotLeftThumbnail from "../assets/images/robot-thumbnail.png";
 import heroBackground from "../assets/images/hero_section_bg.jpg";
 import heroImage from "../assets/images/hero_section_image.png";
 import StatsSection from "./StatsSection";
