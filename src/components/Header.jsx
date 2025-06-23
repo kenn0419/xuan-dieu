@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
-import logo from "../assets/images/logo.png";
-import logoThumbnail from "../assets/images/XD01.png";
+import logoThumbnail from "../assets/images/logo-XD.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
