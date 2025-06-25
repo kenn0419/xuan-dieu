@@ -7,7 +7,7 @@ const BuildMetaverseSection = () => {
   const navigate = useNavigate();
   return (
     <section className="py-20 relative" id="introduce">
-      <div className="w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+      <div className="lg:w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="flex justify-center mb-10 md:mb-0">
           <img
             src={sectionThumbnail}
@@ -20,14 +20,15 @@ const BuildMetaverseSection = () => {
           <h2 className="text-6xl font-semibold leading-tight mb-6 text-white text-center lg:text-end">
             We Build The <span className="text-orange-500">Metaverse</span>
           </h2>
-          <p className="text-[17px] text-gray-300 mb-8 text-center lg:text-end">
+          <p className="lg:p-0 p-2 text-[17px] text-gray-300 mb-8 text-center lg:text-end">
             Create and customize your unique full-body Avatar or select a
             version from our library! You could even import your VRM model to
             now. Stand out from the crowd and can look like anime versions of
             themselves.
           </p>
           <button
-            className="bg-gradient-to-br from-red-500 to-orange-300 px-12 py-4 rounded-3xl text-sm text-black font-medium cursor-pointer flex gap-1 items-center"
+            className="bg-gradient-to-r from-[#D40814] via-50%-[#DF4158] via-80%-[#F2715C] to-[#EE4121] px-12 py-4 rounded-3xl text-base 
+            text-black cursor-pointer flex gap-1 items-center font-semibold"
             onClick={() => navigate(`/teams`)}
           >
             Nhân sự

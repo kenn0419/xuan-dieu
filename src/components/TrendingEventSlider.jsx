@@ -88,7 +88,7 @@ const TrendingEventsSlider = () => {
                     alt="Trending Image"
                     className="w-15 h-15 rounded-full object-cover"
                   />
-                  <p className="text-white font-semibold text-xl whitespace-nowrap">
+                  <p className="text-white font-semibold text-xl whitespace-nowrap uppercase">
                     {event.title}
                   </p>
                 </SwiperSlide>

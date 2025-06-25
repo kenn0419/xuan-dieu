@@ -3,12 +3,12 @@ import EventSlider from "./EventSlider";
 const ExploreEventsSection = () => {
   return (
     <section className="py-20 px-6" id="trending">
-      <div className="w-7xl mx-auto relative">
+      <div className="lg:w-7xl mx-auto relative">
         <h2 className="text-6xl font-medium font-montserrat text-white text-center mb-12">
           Explore our Virtual Events
         </h2>
         <EventSlider />
-        <svg
+        {/* <svg
           width="100%"
           height="160px"
           viewBox="0 0 700 160"
@@ -23,7 +23,7 @@ const ExploreEventsSection = () => {
             fill="none"
             strokeWidth="1"
           />
-        </svg>
+        </svg> */}
       </div>
     </section>
   );

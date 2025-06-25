@@ -1,5 +1,5 @@
 import { FaLinkedinIn, FaXing, FaXTwitter, FaYoutube } from "react-icons/fa6";
-import logo from "../assets/images/logo-XD.png";
+import logo from "../assets/images/logo-footer.png";
 import image1 from "../assets/images/XD.jpg";
 import image2 from "../assets/images/XUNI-APP.jpg";
 import image3 from "../assets/images/Logo-Ong-Kinh-01.jpg";
@@ -8,7 +8,7 @@ import image5 from "../assets/images/982742b6edc65a9803d7.jpg";
 
 const Footer = () => {
   const medias = [
-    { id: 1, iconSrc: image1, title: "xuandieu.com.vn", link: "/" },
+    // { id: 1, iconSrc: image1, title: "xuandieu.com.vn", link: "/" },
     {
       id: 2,
       iconSrc: image3,

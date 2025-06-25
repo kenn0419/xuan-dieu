@@ -3,6 +3,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
+@font-face {
+  font-family: "SVN-Avengeance";
+  src: url("/font/SVN-Avengeance.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SVN-Hemi Head";
+  src: url("/font/SVN-Hemi Head.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SVN-Nexa Rush Slab Black Shadow";
+  src: url("/font/SVN-Nexa Rush Slab Black Shadow.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SVN-Revolution.ttf";
+  src: url("/font/SVN-Revolution.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-avengeance {
+  font-family: "SVN Avengeance";
+}
+
+.font-hemi-head {
+  font-family: "SVN-Hemi Head";
+}
+
+.font-nexa-rush {
+  font-family: "SVN-Nexa Rush Slab Black Shadow";
+}
+
+.font-revolution {
+  font-family: "SVN-Revolution";
+}
+
 @theme {
   --font-sans: "Poppins", sans-serif;
   --font-geologica: "Geologica", sans-serif;

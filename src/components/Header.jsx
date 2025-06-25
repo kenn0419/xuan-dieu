@@ -3,8 +3,7 @@ import { IoMenu } from "react-icons/io5";
 import logoThumbnail from "../assets/images/logo-XD.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
+const Header = ({ onShowMenu }) => {
   const [showBackGroundHeader, setShowBackGroundHeader] = useState(false);
 
   const location = useLocation();
@@ -53,22 +52,24 @@ const Header = () => {
   }, [location]);
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-[99] shadow-2xl ${
+      className={`fixed top-0 left-0 w-full z-[90] shadow-2xl ${
         showBackGroundHeader
           ? "bg-gradient-to-r from-red-500 to-black"
           : "bg-transparent"
       }`}
     >
-      <div className="xl:w-[1200px] md:w-full lg:w-full mx-auto flex justify-between items-center py-2">
-        <a className="cursor-pointer">
+      <div className="lg:w-[1200px] w-full mx-auto flex justify-between items-center py-2 px-5 lg:px-0">
+        <Link to={"/"} className="cursor-pointer flex items-center gap-2">
           <img
             src={logoThumbnail}
             alt="XD MEDIA"
-            className="w-22 object-contain"
+            className="w-50 object-contain"
           />
-        </a>
+        </Link>
         <nav className="hidden xl:flex gap-6 text-lg items-center">
-          <Link to={`/`}>Trang Chủ</Link>
+          <Link to={`/`} className="hover:text-primary">
+            Trang Chủ
+          </Link>
           <a
             onClick={() => {
               const introduce = document.getElementById("introduce");
@@ -78,7 +79,7 @@ const Header = () => {
                 navigate("/#introduce");
               }
             }}
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-primary"
           >
             Giới Thiệu
           </a>
@@ -91,7 +92,7 @@ const Header = () => {
                 navigate("/#trending");
               }
             }}
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-primary"
           >
             Xu Hướng
           </a>
@@ -104,7 +105,7 @@ const Header = () => {
                 navigate("/#service");
               }
             }}
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-primary"
           >
             Dịch Vụ
           </a>
@@ -117,15 +118,15 @@ const Header = () => {
             }}
             className="px-4 py-2 text-white font-semibold rounded-md cursor-pointer 
              bg-transparent border border-primary transition duration-800 ease-in-out
-             hover:bg-gradient-to-br hover:from-red-500 hover:to-orange-300 hover:text-black"
+             hover:bg-gradient-to-r hover:from-[#D40814] hover:via-30%-[#DF4158] hover:via-70%-[#F2715C] hover:to-[#EE4121] hover:text-black"
           >
             Liên Hệ
           </a>
         </nav>
 
-        <div className="lg:hidden">
+        <div className="lg:hidden" onClick={() => onShowMenu(true)}>
           <span className="cursor-pointer">
-            <IoMenu size={30} color="black" />
+            <IoMenu size={30} color="white" />
           </span>
         </div>
       </div>
