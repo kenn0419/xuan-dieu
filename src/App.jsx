@@ -76,7 +76,7 @@ const AppContent = () => {
       </div>
       <div className="fixed bottom-5 right-2 z-[80]">
         <Link
-          to={"/"}
+          to={`${pathname}`}
           className="p-2 bg-gradient-to-br from-red-500 to-orange-300 rounded-full cursor-pointer flex items-center justify-center"
         >
           <FaArrowUp size={24} />
