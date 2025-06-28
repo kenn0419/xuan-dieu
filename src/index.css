@@ -142,6 +142,65 @@
   box-shadow: 0 0 10px #ff6d10, 0 0 20px #bd7c28;
 }
 
+.frame-team-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.frame-team-left::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 60%;
+  background-color: #a5c9ec;
+}
+
+.frame-team-left::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 60%;
+  background-color: #a5c9ec;
+}
+
+.frame-team-right {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.frame-team-right::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  height: 3px;
+  width: 60%;
+  background-color: #a5c9ec;
+}
+
+.frame-team-right::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 3px;
+  height: 60%;
+  background-color: #a5c9ec;
+}
+
+.frame-team-left::before,
+.frame-team-left::after,
+.frame-team-right::before,
+.frame-team-right::after {
+  box-shadow: 0 0 10px #ececee, 0 0 20px #085aab;
+}
+
 #trending-slider::before {
   position: absolute;
   left: 0;

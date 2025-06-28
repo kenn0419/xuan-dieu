@@ -7,27 +7,28 @@ const BuildMetaverseSection = () => {
   const navigate = useNavigate();
   return (
     <section className="py-20 relative" id="introduce">
-      <div className="lg:w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+      <div className="md:w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="flex justify-center mb-10 md:mb-0">
           <img
             src={sectionThumbnail}
             alt="We Build The Metaverse"
-            className="lg:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
+            className="md:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
           />
         </div>
 
-        <div className="flex flex-col items-center lg:w-1/2 lg:pl-10 lg:text-end lg:items-end">
-          <h2 className="text-6xl font-semibold leading-tight mb-6 text-white text-center lg:text-end">
-            We Build The <span className="text-orange-500">Metaverse</span>
+        <div className="flex flex-col items-center md:w-1/2 md:pl-10 md:text-end md:items-end">
+          <h2 className="text-4xl font-semibold leading-tight mb-6 text-white text-center md:text-end flex flex-col font-hemi-head">
+            Khơi Nguồn Sáng Tạo
+            <span className="text-orange-500">Dẫn Lối Tương Lai AI</span>
           </h2>
-          <p className="lg:p-0 p-2 text-[17px] text-gray-300 mb-8 text-center lg:text-end">
-            Create and customize your unique full-body Avatar or select a
-            version from our library! You could even import your VRM model to
-            now. Stand out from the crowd and can look like anime versions of
-            themselves.
+          <p className="md:p-0 p-2 text-[17px] text-gray-300 mb-8 text-center md:text-justify">
+            Xuân Diệu Media là đơn vị phát triển trong lĩnh vực AI tại Việt Nam,
+            kết hợp nghệ thuật sáng tạo với công nghệ hiện đại. Cùng đội ngũ trẻ
+            trung, giàu đam mê, XUÂN DIỆU MEDIA hứa hẹn sẽ mang đến những sản
+            phẩm thông minh tạo nên giá trị dành cho người dùng.
           </p>
           <button
-            className="bg-gradient-to-r from-[#D40814] via-50%-[#DF4158] via-80%-[#F2715C] to-[#EE4121] px-12 py-4 rounded-3xl text-base 
+            className="bg-gradient-to-r from-[#D40814] via-50%-[#DF4158] via-80%-[#F2715C] to-[#EE4121] px-12 py-4 rounded-3xl text-lg 
             text-black cursor-pointer flex gap-1 items-center font-semibold"
             onClick={() => navigate(`/teams`)}
           >

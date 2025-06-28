@@ -27,7 +27,10 @@ const EventSlider = () => {
 
   return (
     <section className="py-20 px-6 relative">
-      <div className="swiper-button-prev-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full flex items-center justify-center shadow absolute top-1/2 left-5 z-[70]">
+      <div
+        className="swiper-button-prev-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full 
+      flex items-center justify-center shadow absolute md:top-1/2 top-2/5 md:left-5 left-0 z-[70]"
+      >
         <svg
           fill="#000000"
           width="25px"
@@ -39,7 +42,7 @@ const EventSlider = () => {
           <path d="M6.70711 2.29289C6.31658 1.90237 5.68342 1.90237 5.29289 2.29289L0.792893 6.79289C0.40237 7.18342 0.40237 7.81658 0.792893 8.20711L5.29289 12.7071C5.68342 13.0976 6.31658 13.0976 6.70711 12.7071C7.09763 12.3166 7.09763 11.6834 6.70711 11.2929L4 8.5H13.5C14.0523 8.5 14.5 8.05228 14.5 7.5C14.5 6.94772 14.0523 6.5 13.5 6.5H4L6.70711 3.70711C7.09763 3.31658 7.09763 2.68342 6.70711 2.29289Z" />
         </svg>
       </div>
-      <div className="lg:w-7xl mx-auto">
+      <div className="md:w-7xl mx-auto">
         <Swiper
           id="event_slider"
           effect={"coverflow"}
@@ -75,7 +78,7 @@ const EventSlider = () => {
           {slides.map((slide) => (
             <SwiperSlide
               key={slide.id}
-              className="w-[300px] md:w-[400px] lg:w-[500px]"
+              className="w-[300px] md:w-[400px] md:w-[500px]"
             >
               <div className="relative">
                 <div className="frame-left"></div>
@@ -90,7 +93,10 @@ const EventSlider = () => {
           ))}
         </Swiper>
       </div>
-      <div className="swiper-button-next-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full flex items-center justify-center shadow absolute top-1/2 -right-6 z-50">
+      <div
+        className="swiper-button-next-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full 
+        flex items-center justify-center shadow absolute md:top-1/2 top-2/5 md:-right-6 right-0 z-50"
+      >
         <svg
           fill="#000000"
           width="25px"

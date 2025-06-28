@@ -52,13 +52,13 @@ const Header = ({ onShowMenu }) => {
   }, [location]);
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-[90] shadow-2xl ${
+      className={`fixed top-0 left-0 w-full z-[90] shadow-2xl max-w-full ${
         showBackGroundHeader
           ? "bg-gradient-to-r from-red-500 to-black"
           : "bg-transparent"
       }`}
     >
-      <div className="lg:w-[1200px] w-full mx-auto flex justify-between items-center py-2 px-5 lg:px-0">
+      <div className="md:w-[1200px] w-full mx-auto flex justify-between items-center py-2 px-5 md:px-0">
         <Link to={"/"} className="cursor-pointer flex items-center gap-2">
           <img
             src={logoThumbnail}
@@ -124,7 +124,7 @@ const Header = ({ onShowMenu }) => {
           </a>
         </nav>
 
-        <div className="lg:hidden" onClick={() => onShowMenu(true)}>
+        <div className="md:hidden" onClick={() => onShowMenu(true)}>
           <span className="cursor-pointer">
             <IoMenu size={30} color="white" />
           </span>
