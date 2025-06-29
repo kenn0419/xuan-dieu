@@ -37,7 +37,7 @@ const Footer = () => {
     >
       <div className="absolute bottom-0 left-0 w-65 h-70 bg-orange-400 opacity-25 blur-[100px] rounded-full pointer-events-none z-0"></div>
       <div className="md:grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 text-white">
-        <div className="flex md:flex-col flex-row gap-10 md:gap-3 justify-center items-center">
+        <div className="flex md:flex-col flex-row gap-10 md:gap-3 md:justify-center items-center">
           <div>
             <h3 className="font-bold mb-5 text-xl">Liên hệ</h3>
             <div className="flex flex-col gap-3">

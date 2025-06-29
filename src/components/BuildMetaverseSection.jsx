@@ -2,13 +2,26 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import sectionThumbnail from "../assets/images/Betterimage.ai_1749393457957-removebg-preview.png";
 import TrendingEventsSlider from "./TrendingEventSlider";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BuildMetaverseSection = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
   return (
     <section className="py-20 relative" id="introduce">
       <div className="md:w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="flex justify-center mb-10 md:mb-0">
+        <div
+          className="flex justify-center mb-10 md:mb-0"
+          data-aos="slide-left"
+        >
           <img
             src={sectionThumbnail}
             alt="We Build The Metaverse"
@@ -16,7 +29,10 @@ const BuildMetaverseSection = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center md:w-1/2 md:pl-10 md:text-end md:items-end">
+        <div
+          className="flex flex-col items-center md:w-1/2 md:pl-10 md:text-end md:items-end"
+          data-aos="slide-right"
+        >
           <h2 className="text-4xl font-semibold leading-tight mb-6 text-white text-center md:text-end flex flex-col font-hemi-head">
             Khơi Nguồn Sáng Tạo
             <span className="text-orange-500">Dẫn Lối Tương Lai AI</span>

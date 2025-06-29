@@ -29,7 +29,7 @@ const FeaturesSection = () => {
       id="service"
     >
       <div className="md:w-7xl mx-auto text-center">
-        <h2 className="text-5xl md:text-4xl font-medium text-white mb-10 font-hemi-head">
+        <h2 className="text-4xl font-medium text-white mb-10 font-hemi-head">
           ĐỊNH VỊ THƯƠNG HIỆU TRUYỀN THÔNG VÀ CÔNG NGHỆ
         </h2>
         <p className="text-base text-gray-300 mb-12 md:w-[800px] mx-auto">
@@ -49,13 +49,13 @@ const FeaturesSection = () => {
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 rounded-full golden-bar-container">
                 <div className="golden-bar"></div>
               </div>
-              <div className="w-[80px] h-[80px] mb-20 rounded-full bg-orange-500 flex items-center justify-center shadow-md">
+              <div className="w-[80px] h-[80px] mb-10 md:mb-20 rounded-full bg-orange-500 flex items-center justify-center shadow-md">
                 {<feature.icon color="white" size={35} />}
               </div>
               <h3 className="text-2xl font-medium mb-16 capitalize font-hemi-head">
                 {feature.title}
               </h3>
-              <p className="text-base text-gray-300 w-6/7 mx-auto text-center h-[180px]">
+              <p className="text-base text-gray-300 w-full md:w-6/7 mx-auto text-center h-[180px]">
                 {feature.description}
               </p>
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 h-80 bg-primary opacity-25 blur-[100px] rounded-full pointer-events-none z-0"></div>

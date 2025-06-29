@@ -52,6 +52,30 @@
   --color-primary: #ff6d10;
   --color-dark: #0f0f2d;
   --color-violet: #5b3cc4;
+
+  --animate-slide-right: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+
+  --animate-slide-left: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+
+  @keyframes slide-right {
+    0% {
+      transform: translateX(500px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(-500px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 }
 
 /* #footer > div {
@@ -64,22 +88,6 @@
 
 #trending_event_slider .swiper-wrapper {
   justify-content: space-between;
-}
-
-@keyframes runInPlace {
-  0% {
-    transform: translateY(0) rotate(-1deg);
-  }
-  50% {
-    transform: translateY(-5px) rotate(1deg);
-  }
-  100% {
-    transform: translateY(0) rotate(-1deg);
-  }
-}
-
-.animate-run {
-  animation: runInPlace 0.3s infinite;
 }
 
 .frame-left {

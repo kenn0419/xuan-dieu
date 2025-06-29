@@ -35,7 +35,7 @@ const HeroSection = () => (
       </h1>
     </div>
     <div className="bg-gradient-to-r from-[#1E1F33] to-black/40 w-full md:w-7xl shadow-r-md h-[150px] mt-10 p-10">
-      <h4 className="flex flex-col gap-3 text-lg items-start w-2xl mx-auto font-hemi-head">
+      <h4 className="hidden md:flex flex-col gap-3 text-lg items-start w-2xl mx-auto font-hemi-head">
         <span>Chúng tôi không chỉ tạo ra công nghệ</span>
         <span>Chúng tôi tái định nghĩa sự kết nối bằng trí tuệ nhân tạo</span>
       </h4>
@@ -49,7 +49,7 @@ const HeroSection = () => (
     <img
       src={robotThumbnail}
       alt="VR Person"
-      className="md:h-[700px] h-[400px] object-cover absolute bottom-20 md:bottom-5 right-0"
+      className="md:h-[700px] h-[350px] object-cover absolute bottom-20 md:bottom-5 right-0"
     />
   </section>
 );

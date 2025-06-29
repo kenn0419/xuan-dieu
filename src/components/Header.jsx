@@ -67,7 +67,10 @@ const Header = ({ onShowMenu }) => {
           />
         </Link>
         <nav className="hidden xl:flex gap-6 text-lg items-center">
-          <Link to={`/`} className="hover:text-primary">
+          <Link
+            to={`/`}
+            className="hover:text-primary transition duration-800 ease-in-out"
+          >
             Trang Chủ
           </Link>
           <a
@@ -79,7 +82,7 @@ const Header = ({ onShowMenu }) => {
                 navigate("/#introduce");
               }
             }}
-            className="cursor-pointer hover:text-primary"
+            className="cursor-pointer hover:text-primary transition duration-800 ease-in-out"
           >
             Giới Thiệu
           </a>
@@ -92,7 +95,7 @@ const Header = ({ onShowMenu }) => {
                 navigate("/#trending");
               }
             }}
-            className="cursor-pointer hover:text-primary"
+            className="cursor-pointer hover:text-primary transition duration-800 ease-in-out"
           >
             Xu Hướng
           </a>
@@ -105,7 +108,7 @@ const Header = ({ onShowMenu }) => {
                 navigate("/#service");
               }
             }}
-            className="cursor-pointer hover:text-primary"
+            className="cursor-pointer hover:text-primary transition duration-800 ease-in-out"
           >
             Dịch Vụ
           </a>

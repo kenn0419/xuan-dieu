@@ -4,6 +4,7 @@ import {
   Outlet,
   RouterProvider,
   useLocation,
+  useNavigate,
 } from "react-router-dom";
 
 import Footer from "./components/Footer";
@@ -40,6 +41,7 @@ const mediaList = [
   },
 ];
 const AppContent = () => {
+  const navigate = useNavigate();
   const { pathname } = useLocation();
   const menuRef = useRef();
   const [showMenu, setShowMenu] = useState(false);
@@ -59,6 +61,7 @@ const AppContent = () => {
   }, []);
 
   useEffect(() => {
+    setShowMenu(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
   return (
@@ -75,18 +78,80 @@ const AppContent = () => {
         ))}
       </div>
       <div className="fixed bottom-5 right-2 z-[80]">
-        <Link
-          to={`${pathname}`}
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="p-2 bg-gradient-to-br from-red-500 to-orange-300 rounded-full cursor-pointer flex items-center justify-center"
         >
           <FaArrowUp size={24} />
-        </Link>
+        </button>
       </div>
       {showMenu && (
         <div
-          className="absolute z-[99] right-0 top-0 w-2/5 h-full bg-white"
+          className="fixed z-[99] right-0 top-0 w-2/5 h-full bg-gradient-to-br from-red-500 to-orange-300 py-5 animate-slide-right"
           ref={menuRef}
-        ></div>
+        >
+          <nav className="flex flex-col gap-6 text-lg items-center">
+            <Link to={`/`} className="hover:text-primary">
+              Trang Chủ
+            </Link>
+            <a
+              onClick={() => {
+                const introduce = document.getElementById("introduce");
+                if (introduce) {
+                  introduce.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  navigate("/#introduce");
+                }
+                setShowMenu(false);
+              }}
+              className="cursor-pointer hover:text-primary"
+            >
+              Giới Thiệu
+            </a>
+            <a
+              onClick={() => {
+                const trending = document.getElementById("trending");
+                if (trending) {
+                  trending.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  navigate("/#trending");
+                }
+                setShowMenu(false);
+              }}
+              className="cursor-pointer hover:text-primary"
+            >
+              Xu Hướng
+            </a>
+            <a
+              onClick={() => {
+                const service = document.getElementById("service");
+                if (service) {
+                  service.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  navigate("/#service");
+                }
+                setShowMenu(false);
+              }}
+              className="cursor-pointer hover:text-primary"
+            >
+              Dịch Vụ
+            </a>
+            <a
+              onClick={() => {
+                const footer = document.getElementById("footer");
+                if (footer) {
+                  footer.scrollIntoView({ behavior: "smooth" });
+                }
+                setShowMenu(false);
+              }}
+              className="px-4 py-2 text-white font-semibold rounded-md cursor-pointer 
+             bg-transparent border border-primary transition duration-800 ease-in-out
+             hover:bg-gradient-to-r hover:from-[#D40814] hover:via-30%-[#DF4158] hover:via-70%-[#F2715C] hover:to-[#EE4121] hover:text-black"
+            >
+              Liên Hệ
+            </a>
+          </nav>
+        </div>
       )}
       <Header onShowMenu={setShowMenu} />
       <Outlet />
