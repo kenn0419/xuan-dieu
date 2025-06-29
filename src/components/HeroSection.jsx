@@ -15,8 +15,8 @@ const HeroSection = () => (
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover opacity-20"
       />
-      <h1 className="md:text-8xl text-3xl font-semibold leading-snug text-center flex flex-col relative font-hemi-head uppercase mb-40">
-        <span className="">
+      <h1 className="md:text-8xl text-3xl font-semibold leading-snug text-center flex flex-col relative font-hemi-head uppercase mb-40 animate-fade-out-top">
+        <span>
           Công nghệ <span className="text-primary">★</span> Tương Lai
         </span>
         <span>

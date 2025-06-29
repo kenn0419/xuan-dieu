@@ -1,22 +1,32 @@
-import { MdEmojiEvents } from "react-icons/md";
-import { SiEventbrite, SiEventstore } from "react-icons/si";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import image1 from "../assets/images/feature-icon-1.png";
+import image2 from "../assets/images/feature-icon-2.png";
+import image3 from "../assets/images/feature-icon-3.png";
 
 const FeaturesSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
   const features = [
     {
-      icon: MdEmojiEvents,
+      icon: image1,
       title: "Truyền Thông Marketing",
       description:
         "Chúng tôi cung cấp dịch vụ chuyên nghiệp giúp bạn tiếp thị sản phẩm / dịch vụ hoặc quảng bá thương hiệu mạnh mẽ trên mọi nền tảng mạng xã hội. Mở rộng tệp khách hàng tiềm năng một cách hiệu quả và bền vững.",
     },
     {
-      icon: SiEventstore,
+      icon: image2,
       title: "Tin tức",
       description:
         "Nội dung tin tức được tập trung phát triển xoay quanh ba lĩnh vực chính: công nghệ, giải trí và game – nhằm -mang đến cho người dùng thông tin chuyên sâu, cập nhật nhanh chóng và phù hợp với xu hướng hiện đại.",
     },
     {
-      icon: SiEventbrite,
+      icon: image3,
       title: "Thương mại điện tử",
       description:
         "Chúng tôi phát triển ứng dụng mạng xã hội XUNI – nền tảng kết hợp giữa kết nối cộng đồng và thương mại điện tử nhằm hỗ trợ doanh nghiệp tối ưu hóa phân phối và hiển thị hàng hóa, đồng thời gia tăng khả năng tiếp cận khách hàng mục tiêu.",
@@ -29,7 +39,7 @@ const FeaturesSection = () => {
       id="service"
     >
       <div className="md:w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-medium text-white mb-10 font-hemi-head">
+        <h2 className="text-4xl font-medium text-white mb-10 font-hemi-head animate-fade-out-top">
           ĐỊNH VỊ THƯƠNG HIỆU TRUYỀN THÔNG VÀ CÔNG NGHỆ
         </h2>
         <p className="text-base text-gray-300 mb-12 md:w-[800px] mx-auto">
@@ -49,13 +59,26 @@ const FeaturesSection = () => {
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 rounded-full golden-bar-container">
                 <div className="golden-bar"></div>
               </div>
-              <div className="w-[80px] h-[80px] mb-10 md:mb-20 rounded-full bg-orange-500 flex items-center justify-center shadow-md">
-                {<feature.icon color="white" size={35} />}
+              <div className="w-[85px] h-[85px] mb-10 md:mb-20 rounded-full bg-orange-500 flex items-center justify-center shadow-md">
+                {/* {<feature.icon color="white" size={35} />} */}
+                <img
+                  src={feature.icon}
+                  alt="feature icon"
+                  className={`${
+                    index == 2 ? "w-20 h-20" : "w-15 h-15"
+                  } object-contain`}
+                />
               </div>
-              <h3 className="text-2xl font-medium mb-16 capitalize font-hemi-head">
+              <h3
+                className="text-2xl font-medium mb-16 capitalize font-hemi-head"
+                data-aos="slide-left"
+              >
                 {feature.title}
               </h3>
-              <p className="text-base text-gray-300 w-full md:w-6/7 mx-auto text-center h-[180px]">
+              <p
+                className="text-base text-gray-300 w-full md:w-6/7 mx-auto text-center h-[180px]"
+                data-aos="slide-right"
+              >
                 {feature.description}
               </p>
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 h-80 bg-primary opacity-25 blur-[100px] rounded-full pointer-events-none z-0"></div>
