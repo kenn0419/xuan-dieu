@@ -1,9 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import image1 from "../assets/images/1c628630545671a69c8155284132f498.jpg";
-import image2 from "../assets/images/1c628630545671a69c8155284132f498.jpg";
-import image3 from "../assets/images/1c628630545671a69c8155284132f498.jpg";
-import image4 from "../assets/images/1c628630545671a69c8155284132f498.jpg";
-import image5 from "../assets/images/1c628630545671a69c8155284132f498.jpg";
+import image1 from "../assets/images/event-slide-1.jpg";
+import image2 from "../assets/images/event-slide-2.jpg";
+import image3 from "../assets/images/event-slide-3.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -21,8 +19,9 @@ const EventSlider = () => {
     { id: 1, img: image1, alt: "Virtual Event 1" },
     { id: 2, img: image2, alt: "Virtual Event 2" },
     { id: 3, img: image3, alt: "Virtual Event 3" },
-    { id: 4, img: image4, alt: "Virtual Event 4" },
-    { id: 5, img: image5, alt: "Virtual Event 5" },
+    { id: 4, img: image1, alt: "Virtual Event 4" },
+    { id: 5, img: image2, alt: "Virtual Event 5" },
+    { id: 6, img: image3, alt: "Virtual Event 6" },
   ];
 
   return (

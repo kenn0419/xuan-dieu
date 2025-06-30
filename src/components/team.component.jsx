@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-import image from "../assets/images/image-team.png";
+import image from "../assets/images/team-img.jpg";
 import imageBackground from "../assets/images/bg-team-member.jpg";
 
 const teamMembers = [
@@ -129,11 +129,11 @@ const Team = () => {
                 >
                   <div className="frame-team-left"></div>
                   <img
-                    src={member.imageBackground}
+                    src={member.image}
                     alt={member.name}
                     className="w-full h-[385px] object-cover bg-left-top"
                   />
-                  <div className="absolute z-80 -top-10 -left-5 w-4/5">
+                  {/* <div className="absolute z-80 -top-10 -left-5 w-4/5">
                     <img
                       src={member.image}
                       alt=""
@@ -143,7 +143,7 @@ const Team = () => {
                       <h2 className="font-hemi-head text-lg">{member.name}</h2>
                       <p>{member.position}</p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="frame-team-right"></div>
                 </div>
               </SwiperSlide>
