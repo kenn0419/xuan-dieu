@@ -37,10 +37,9 @@ const EventSlider = () => {
 
   return (
     <section className="py-20 px-6 relative">
-      {/* Prev button */}
       <div
         className="swiper-button-prev-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full 
-        flex items-center justify-center shadow absolute lg:top-1/2 top-2/5 lg:left-5 left-0 z-[70]"
+        flex items-center justify-center shadow absolute lg:top-1/2 top-2/5 left-0 z-[70]"
       >
         <svg
           fill="#000000"
@@ -56,7 +55,6 @@ const EventSlider = () => {
       <div className="lg:w-7xl mx-auto">
         <Swiper
           ref={swiperRef}
-          effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
           autoplay={{
@@ -73,35 +71,29 @@ const EventSlider = () => {
           }}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           loop={true}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
           onSlideChange={restartAllChaserAnimations}
           className="mySwiper"
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id} className="my-10">
               <div className="relative w-full h-full lg:w-[400px] lg:h-[400px] z-10">
+                <div className="frame-left"></div>
                 <img
                   src={slide.img}
                   alt={slide.alt}
-                  className="w-full h-full border-[10px] border-[#291E2B]"
+                  className="w-full h-full"
                 />
-                <div className="chaser top-line"></div>
+                <div className="frame-right"></div>
+                {/* <div className="chaser top-line"></div>
                 <div className="chaser right-line"></div>
                 <div className="chaser bottom-line"></div>
-                <div className="chaser left-line"></div>
+                <div className="chaser left-line"></div> */}
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      {/* Next button */}
       <div
         className="swiper-button-next-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full 
         flex items-center justify-center shadow absolute lg:top-1/2 top-2/5 lg:-right-6 right-0 z-[70]"

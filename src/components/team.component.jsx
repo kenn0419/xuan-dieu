@@ -11,37 +11,52 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-import image from "../assets/images/team-img.jpg";
-import imageBackground from "../assets/images/bg-team-member.jpg";
+import xuanChinh from "../assets/images/xuan-chinh.jpg";
+import dieuHuyen from "../assets/images/dieu-huyen.jpg";
+import nguyet from "../assets/images/nguyet.jpg";
+import long from "../assets/images/Long.jpg";
+import di from "../assets/images/Di.jpg";
+import bao from "../assets/images/Bao.jpg";
+import vy from "../assets/images/Vy.jpg";
+import nguyen from "../assets/images/Nguyen.jpg";
+import hau from "../assets/images/Hau.jpg";
 
 const teamMembers = [
   {
     id: 1,
-    image: image,
-    imageBackground: imageBackground,
-    name: "Dianne Russell",
-    position: "Co-Founder & CEO",
+    image: xuanChinh,
   },
   {
     id: 2,
-    image: image,
-    imageBackground: imageBackground,
-    name: "Mike Fisher",
-    position: "Co-Founder & CFO",
+    image: dieuHuyen,
   },
   {
     id: 3,
-    image: image,
-    imageBackground: imageBackground,
-    name: "Wade Warren",
-    position: "Co-Founder & CTO",
+    image: nguyet,
   },
   {
     id: 4,
-    image: image,
-    imageBackground: imageBackground,
-    name: "Esther Howard",
-    position: "Vice President",
+    image: long,
+  },
+  {
+    id: 5,
+    image: di,
+  },
+  {
+    id: 6,
+    image: bao,
+  },
+  {
+    id: 7,
+    image: vy,
+  },
+  {
+    id: 8,
+    image: nguyen,
+  },
+  {
+    id: 9,
+    image: hau,
   },
 ];
 
@@ -62,7 +77,7 @@ const Team = () => {
   }, []);
   return (
     <div>
-      <div className="flex items-center justify-between mt-5">
+      {/* <div className="flex items-center justify-between mt-5">
         <button
           className="bg-gradient-to-r from-[#D40814] via-50%-[#DF4158] via-80%-[#F2715C] to-[#EE4121] px-8 py-3 rounded-3xl text-lg 
     text-black cursor-pointer flex gap-1 items-center font-semibold"
@@ -81,7 +96,7 @@ const Team = () => {
             </svg>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="lg:mx-auto">
         <Swiper
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -113,7 +128,7 @@ const Team = () => {
 
             if (isActive) {
               slideClass +=
-                " z-30 scale-110 -translate-y-4 mt-10 w-[400px] h-[400px]";
+                " z-30 scale-110 -translate-y-4 mt-10 w-[500px] h-[500px]";
             } else if (isPrev || isNext) {
               slideClass += " z-20 scale-95 translate-y-2 opacity-50";
             } else {
@@ -126,7 +141,7 @@ const Team = () => {
                 className="!flex !justify-center !items-center"
               >
                 <div
-                  className={`${slideClass} overflow-visible w-[350px] relative flex items-center`}
+                  className={`${slideClass} overflow-visible w-[400px] relative flex items-center`}
                 >
                   <div className="frame-team-left"></div>
                   <img
