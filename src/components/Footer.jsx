@@ -33,11 +33,11 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="bg-gradient-to-br from-black to-[#05112D] text-gray-800 px-6 md:px-16 py-12 text-sm relative"
+      className="bg-gradient-to-br from-black to-[#05112D] text-gray-800 px-6 lg:px-16 py-12 text-sm relative"
     >
       <div className="absolute bottom-0 left-0 w-65 h-70 bg-orange-400 opacity-25 blur-[100px] rounded-full pointer-events-none z-0"></div>
-      <div className="md:grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 text-white">
-        <div className="flex md:flex-col flex-row gap-10 md:gap-3 md:justify-center items-center">
+      <div className="lg:grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10 text-white">
+        <div className="flex lg:flex-col flex-row gap-10 lg:gap-3 lg:justify-center items-center">
           <div>
             <h3 className="font-bold mb-5 text-xl">Liên hệ</h3>
             <div className="flex flex-col gap-3">
@@ -50,8 +50,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex md:justify-center mt-5 pt-2 border-t md:mt-0 md:border-none md:pt-0">
-          <div className="flex md:flex-col flex-row gap-10 md:gap-3 justify-center items-center">
+        <div className="flex lg:justify-center mt-5 pt-2 border-t lg:mt-0 lg:border-none lg:pt-0">
+          <div className="flex lg:flex-col flex-row gap-10 lg:gap-3 justify-center items-center">
             <div>
               <h3 className="font-bold mb-5 text-xl">Sáng tạo nội dung</h3>
               <ul className="space-y-1 flex flex-col gap-3">
@@ -65,8 +65,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* <div className="flex md:justify-center mt-5 pt-2 border-t md:mt-0 md:border-none md:pt-0">
-          <div className="md:block flex gap-10">
+        {/* <div className="flex lg:justify-center mt-5 pt-2 border-t lg:mt-0 lg:border-none lg:pt-0">
+          <div className="lg:block flex gap-10">
             <h3 className="font-bold mb-5">Resources</h3>
             <ul className="space-y-1 flex flex-col gap-3">
               <li>Beyond Alphoria</li>

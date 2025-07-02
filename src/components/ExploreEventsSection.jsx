@@ -3,8 +3,8 @@ import EventSlider from "./EventSlider";
 const ExploreEventsSection = () => {
   return (
     <section className="py-20 px-3" id="trending">
-      <div className="md:w-7xl mx-auto relative">
-        <h2 className="md:text-6xl text-4xl font-medium font-montserrat text-white text-center mb-12 font-hemi-head uppercase">
+      <div className="lg:w-7xl mx-auto relative">
+        <h2 className="lg:text-6xl text-4xl font-medium font-montserrat text-white text-center mb-12 font-hemi-head uppercase">
           Lĩnh Vực Phát Triển
         </h2>
         <EventSlider />

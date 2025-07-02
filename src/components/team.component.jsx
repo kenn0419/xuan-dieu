@@ -82,7 +82,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-      <div className="md:mx-auto">
+      <div className="lg:mx-auto">
         <Swiper
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           onSwiper={(swiper) => {
@@ -112,7 +112,8 @@ const Team = () => {
             let slideClass = "transition-all duration-500";
 
             if (isActive) {
-              slideClass += " z-30 scale-110 -translate-y-4 mt-10";
+              slideClass +=
+                " z-30 scale-110 -translate-y-4 mt-10 w-[400px] h-[400px]";
             } else if (isPrev || isNext) {
               slideClass += " z-20 scale-95 translate-y-2 opacity-50";
             } else {
@@ -131,7 +132,7 @@ const Team = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-[385px] object-cover bg-left-top"
+                    className="w-full h-full object-cover bg-left-top"
                   />
                   {/* <div className="absolute z-80 -top-10 -left-5 w-4/5">
                     <img

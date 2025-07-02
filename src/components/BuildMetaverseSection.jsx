@@ -2,42 +2,28 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import sectionThumbnail from "../assets/images/Betterimage.ai_1749393457957-removebg-preview.png";
 import TrendingEventsSlider from "./TrendingEventSlider";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const BuildMetaverseSection = () => {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
-  }, []);
   return (
     <section className="py-20 relative" id="introduce">
-      <div className="md:w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div
-          className="flex justify-center mb-10 md:mb-0"
-          data-aos="slide-left"
-        >
+      <div className="lg:w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div className="flex justify-center mb-10 lg:mb-0">
           <img
             src={sectionThumbnail}
             alt="We Build The Metaverse"
-            className="md:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
+            className="lg:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
           />
         </div>
 
-        <div
-          className="flex flex-col items-center md:w-1/2 md:pl-10 md:text-end md:items-end"
-          data-aos="slide-right"
-        >
-          <h2 className="text-4xl font-semibold leading-tight mb-6 text-white text-center md:text-end flex flex-col font-hemi-head">
+        <div className="flex flex-col items-center lg:w-1/2 lg:pl-10 lg:text-end lg:items-end">
+          <h2 className="text-4xl font-semibold leading-tight mb-6 text-white text-center lg:text-end flex flex-col font-hemi-head">
             Khơi Nguồn Sáng Tạo
             <span className="text-orange-500">Dẫn Lối Tương Lai AI</span>
           </h2>
-          <p className="md:p-0 p-2 text-[17px] text-gray-300 mb-8 text-center md:text-justify">
+          <p className="lg:p-0 p-2 text-[17px] text-gray-300 mb-8 text-center lg:text-justify">
             Xuân Diệu Media là đơn vị phát triển trong lĩnh vực AI tại Việt Nam,
             kết hợp nghệ thuật sáng tạo với công nghệ hiện đại. Cùng đội ngũ trẻ
             trung, giàu đam mê, XUÂN DIỆU MEDIA hứa hẹn sẽ mang đến những sản
