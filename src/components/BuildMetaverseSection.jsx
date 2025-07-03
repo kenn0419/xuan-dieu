@@ -2,24 +2,49 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import sectionThumbnail from "../assets/images/Betterimage.ai_1749393457957-removebg-preview.png";
 import TrendingEventsSlider from "./TrendingEventSlider";
 import { useNavigate } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import backgroundComponent from "../assets/images/bg-component.jpg";
+import useInView from "../hook/useInView";
 
 const BuildMetaverseSection = () => {
   const navigate = useNavigate();
+
+  const [leftRef, leftInView] = useInView({ threshold: 0.4 }, true);
+  const [rightRef, rightInView] = useInView({ threshold: 0.4 }, true);
+
   return (
-    <section className="py-20 relative" id="introduce">
-      <div className="lg:w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="flex justify-center mb-10 lg:mb-0">
+    <section className="relative" id="introduce">
+      <img
+        src={backgroundComponent}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+      />
+      <div className="relative z-1 xl:w-7xl py-20 mx-auto flex flex-col xl:flex-row items-center justify-between">
+        {/* Left Side - Image */}
+        <div
+          ref={leftRef}
+          className={`flex justify-center mb-10 lg:mb-0 transition-all duration-1000 ${
+            leftInView
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 -translate-x-20"
+          }`}
+        >
           <img
             src={sectionThumbnail}
             alt="We Build The Metaverse"
-            className="lg:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
+            className="xl:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
           />
         </div>
 
-        <div className="flex flex-col items-center lg:w-1/2 lg:pl-10 lg:text-end lg:items-end">
-          <h2 className="text-4xl font-semibold leading-tight mb-6 text-white text-center lg:text-end flex flex-col font-hemi-head">
+        {/* Right Side - Content */}
+        <div
+          ref={rightRef}
+          className={`flex flex-col items-center lg:w-1/2 xl:pl-10 xl:text-end xl:items-end transition-all duration-1000 delay-200 ${
+            rightInView
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 translate-x-20"
+          }`}
+        >
+          <h2 className="text-4xl font-semibold leading-tight mb-6 text-white text-center xl:text-end flex flex-col font-hemi-head">
             Khơi Nguồn Sáng Tạo
             <span className="text-orange-500">Dẫn Lối Tương Lai AI</span>
           </h2>

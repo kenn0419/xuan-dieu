@@ -1,24 +1,27 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
 import image1 from "../assets/images/feature-icon-1.png";
 import image2 from "../assets/images/feature-icon-2.png";
 import image3 from "../assets/images/feature-icon-3.png";
+import backgroundComponent from "../assets/images/bg-component.jpg";
+import FeatureCard from "./FeatureCard";
 
 const FeaturesSection = () => {
   const features = [
     {
+      id: 1,
       icon: image1,
       title: "Truyền Thông Marketing",
       description:
         "Chúng tôi cung cấp dịch vụ chuyên nghiệp giúp bạn tiếp thị sản phẩm / dịch vụ hoặc quảng bá thương hiệu mạnh mẽ trên mọi nền tảng mạng xã hội. Mở rộng tệp khách hàng tiềm năng một cách hiệu quả và bền vững.",
     },
     {
+      id: 2,
       icon: image2,
       title: "Tin tức",
       description:
-        "Nội dung tin tức được tập trung phát triển xoay quanh ba lĩnh vực chính: công nghệ, giải trí và game – nhằm -mang đến cho người dùng thông tin chuyên sâu, cập nhật nhanh chóng và phù hợp với xu hướng hiện đại.",
+        "Nội dung tin tức được tập trung phát triển xoay quanh ba lĩnh vực chính: công nghệ, giải trí và game – nhằm mang đến cho người dùng thông tin chuyên sâu, cập nhật nhanh chóng và phù hợp với xu hướng hiện đại.",
     },
     {
+      id: 3,
       icon: image3,
       title: "Thương mại điện tử",
       description:
@@ -27,12 +30,14 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section
-      className="py-20 px-6 bg-gradient-to-br from-black to-[#05112D]"
-      id="service"
-    >
-      <div className="lg:w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-medium text-white mb-10 font-hemi-head animate-fade-out-top">
+    <section className="relative" id="service">
+      <img
+        src={backgroundComponent}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+      />
+      <div className="xl:w-7xl mx-auto text-center py-20 px-6">
+        <h2 className="text-4xl font-medium text-white mb-10 font-hemi-head">
           ĐỊNH VỊ THƯƠNG HIỆU TRUYỀN THÔNG VÀ CÔNG NGHỆ
         </h2>
         <p className="text-base text-gray-300 mb-12 lg:w-[800px] mx-auto">
@@ -42,34 +47,9 @@ const FeaturesSection = () => {
           trong kỷ nguyên số.
         </p>
 
-        <div className="flex justify-center flex-col lg:flex-row gap-6 px-4 py-10 shadow-md">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`group relative mx-auto w-2/3 lg:w-1/3 lg:h-[550px] bg-gradient-to-tr from-[#2b1e29] to-[#141321] 
-            text-white p-6 pt-20 flex flex-col items-center clip-card`}
-            >
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 rounded-full golden-bar-container">
-                <div className="golden-bar"></div>
-              </div>
-              <div className="w-[85px] h-[85px] mb-10 lg:mb-20 rounded-full bg-orange-500 flex items-center justify-center shadow-md">
-                {/* {<feature.icon color="white" size={35} />} */}
-                <img
-                  src={feature.icon}
-                  alt="feature icon"
-                  className={`${
-                    index == 2 ? "w-20 h-20" : "w-15 h-15"
-                  } object-contain`}
-                />
-              </div>
-              <h3 className="text-2xl font-medium mb-16 capitalize font-hemi-head">
-                {feature.title}
-              </h3>
-              <p className="text-base text-gray-300 w-full lg:w-6/7 mx-auto text-center h-[180px]">
-                {feature.description}
-              </p>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 h-80 bg-primary opacity-25 blur-[100px] rounded-full pointer-events-none z-0"></div>
-            </div>
+        <div className="flex justify-center flex-col xl:flex-row gap-6 px-4 py-10 shadow-md">
+          {features.map((feature) => (
+            <FeatureCard key={feature.id} feature={feature} />
           ))}
         </div>
       </div>

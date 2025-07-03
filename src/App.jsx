@@ -66,7 +66,7 @@ const AppContent = () => {
   }, [pathname]);
   return (
     <div className="text-white bg-gradient-to-br from-black to-purple-900 relative">
-      <div className="fixed right-2 bottom-20 z-[80] flex flex-col gap-5">
+      <div className="fixed right-2 bottom-20 z-[99] flex flex-col gap-5">
         {mediaList.map((media) => (
           <a
             key={media.id}

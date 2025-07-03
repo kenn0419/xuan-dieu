@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const useInView = (options = {}) => {
+const useInView = (options = {}, resetOnExit = false) => {
   const ref = useRef();
   const [inView, setInView] = useState(false);
 
@@ -8,6 +8,8 @@ const useInView = (options = {}) => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setInView(true);
+      } else if (resetOnExit) {
+        setInView(false);
       }
     }, options);
 
@@ -16,10 +18,9 @@ const useInView = (options = {}) => {
     return () => {
       if (ref.current) observer.unobserve(ref.current);
     };
-  }, [ref, options]);
+  }, [ref, options, resetOnExit]);
 
   return [ref, inView];
 };
 
-
-export default useInView
+export default useInView;
