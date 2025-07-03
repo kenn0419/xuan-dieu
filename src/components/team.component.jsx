@@ -41,7 +41,7 @@ const Team = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-end py-5 mx-25 xl:hidden">
+      <div className="flex items-center justify-end py-5 xl:hidden">
         <div className="flex gap-5">
           <div
             ref={prevRef}
@@ -95,9 +95,9 @@ const Team = () => {
 
           if (isActive) {
             slideClass +=
-              " z-30 scale-110 -translate-y-4 mt-10 w-[500px] h-[500px]";
+              " z-30 scale-110 -translate-y-4 mt-10 xl:w-[500px] xl:h-[500px] sm:!w-full sm:!w-full mx-5";
           } else if (isPrev || isNext) {
-            slideClass += " z-20 scale-95 translate-y-2 opacity-50";
+            slideClass += " z-20 scale-95 translate-y-2 opacity-50 w-2/3 h-2/3";
           } else {
             slideClass += " z-10 scale-90 translate-y-6 opacity-60";
           }
@@ -108,7 +108,7 @@ const Team = () => {
               className="!flex !justify-center !items-center"
             >
               <div
-                className={`${slideClass} overflow-visible w-[400px] relative flex items-center`}
+                className={`${slideClass} overflow-visible xl:w-[400px] w-full relative flex items-center`}
               >
                 <div className="frame-team-left"></div>
                 <img

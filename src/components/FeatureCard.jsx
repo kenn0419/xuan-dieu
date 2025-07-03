@@ -24,7 +24,9 @@ const FeatureCard = ({ feature }) => {
       <h3
         ref={rightRef}
         className={`text-2xl font-medium mb-10 capitalize font-hemi-head text-center transition-all duration-1000 delay-200 ${
-          rightInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
+          rightInView
+            ? "xl:opacity-100 xl:translate-x-0"
+            : "xl:opacity-0 xl:translate-x-20"
         }`}
       >
         {feature.title}
@@ -32,7 +34,9 @@ const FeatureCard = ({ feature }) => {
       <p
         ref={leftRef}
         className={`text-base text-gray-300 w-full lg:w-6/7 mx-auto text-center h-[180px] transition-all duration-1000 delay-200 ${
-          leftInView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
+          leftInView
+            ? "xl:opacity-100 xl:translate-x-0"
+            : "xl:opacity-0 xl:-translate-x-20"
         }`}
       >
         {feature.description}

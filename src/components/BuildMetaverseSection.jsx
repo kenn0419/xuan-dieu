@@ -24,8 +24,8 @@ const BuildMetaverseSection = () => {
           ref={leftRef}
           className={`flex justify-center mb-10 lg:mb-0 transition-all duration-1000 ${
             leftInView
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-20"
+              ? "xl:opacity-100 xl:translate-x-0"
+              : "xl:opacity-0 xl:-translate-x-20"
           }`}
         >
           <img
@@ -40,8 +40,8 @@ const BuildMetaverseSection = () => {
           ref={rightRef}
           className={`flex flex-col items-center lg:w-1/2 xl:pl-10 xl:text-end xl:items-end transition-all duration-1000 delay-200 ${
             rightInView
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 translate-x-20"
+              ? "xl:opacity-100 xl:translate-x-0"
+              : "xl:opacity-0 xl:translate-x-20"
           }`}
         >
           <h2 className="text-4xl font-semibold leading-tight mb-6 text-white text-center xl:text-end flex flex-col font-hemi-head">

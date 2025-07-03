@@ -11,13 +11,13 @@ const TeamPage = () => {
             Năng động - Say mê - Chuyên nghiệp
           </span>
         </h2>
-        <div>
+        <div className="relative z-1">
           <Team />
         </div>
         <img
           src={backgroundTeam}
           alt="Background"
-          className="absolute inset-0 w-full h-full bg-center opacity-50"
+          className="absolute inset-0 w-full bg-center opacity-50"
         />
       </div>
     </section>
