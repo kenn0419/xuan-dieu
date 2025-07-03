@@ -20,6 +20,7 @@ import bao from "../assets/images/Bao.jpg";
 import vy from "../assets/images/Vy.jpg";
 import nguyen from "../assets/images/Nguyen.jpg";
 import hau from "../assets/images/Hau.jpg";
+import backgroundTeam from "../assets/images/bg-team.jpg";
 
 const teamMembers = [
   { id: 1, image: xuanChinh },
@@ -40,28 +41,23 @@ const Team = () => {
   const nextRef = useRef(null);
 
   return (
-    <div>
-      <div className="flex items-center justify-end py-5 xl:hidden">
-        <div className="flex gap-5">
-          <div
-            ref={prevRef}
-            className="swiper-button-prev-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full flex items-center justify-center shadow"
-          >
-            <svg fill="#000000" width="25px" height="25px" viewBox="0 0 15 15">
-              <path d="M6.70711 2.29289C6.31658 1.90237 5.68342 1.90237 5.29289 2.29289L0.792893 6.79289C0.40237 7.18342 0.40237 7.81658 0.792893 8.20711L5.29289 12.7071C5.68342 13.0976 6.31658 13.0976 6.70711 12.7071C7.09763 12.3166 7.09763 11.6834 6.70711 11.2929L4 8.5H13.5C14.0523 8.5 14.5 8.05228 14.5 7.5C14.5 6.94772 14.0523 6.5 13.5 6.5H4L6.70711 3.70711C7.09763 3.31658 7.09763 2.68342 6.70711 2.29289Z" />
-            </svg>
-          </div>
-          <div
-            ref={nextRef}
-            className="swiper-button-next-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full flex items-center justify-center shadow"
-          >
-            <svg fill="#000000" width="25px" height="25px" viewBox="0 0 15 15">
-              <path d="M8.29289 2.29289C8.68342 1.90237 9.31658 1.90237 9.70711 2.29289L14.2071 6.79289C14.5976 7.18342 14.5976 7.81658 14.2071 8.20711L9.70711 12.7071C9.31658 13.0976 8.68342 13.0976 8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L11 8.5H1.5C0.947715 8.5 0.5 8.05228 0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H11L8.29289 3.70711C7.90237 3.31658 7.90237 2.68342 8.29289 2.29289Z" />
-            </svg>
-          </div>
-        </div>
+    <div className="">
+      <div
+        ref={prevRef}
+        className="swiper-button-prev-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full xl:hidden flex items-center justify-center shadow absolute top-1/2 left-0 z-[80]"
+      >
+        <svg fill="#000000" width="25px" height="25px" viewBox="0 0 15 15">
+          <path d="M6.70711 2.29289C6.31658 1.90237 5.68342 1.90237 5.29289 2.29289L0.792893 6.79289C0.40237 7.18342 0.40237 7.81658 0.792893 8.20711L5.29289 12.7071C5.68342 13.0976 6.31658 13.0976 6.70711 12.7071C7.09763 12.3166 7.09763 11.6834 6.70711 11.2929L4 8.5H13.5C14.0523 8.5 14.5 8.05228 14.5 7.5C14.5 6.94772 14.0523 6.5 13.5 6.5H4L6.70711 3.70711C7.09763 3.31658 7.09763 2.68342 6.70711 2.29289Z" />
+        </svg>
       </div>
-
+      <div
+        ref={nextRef}
+        className="swiper-button-next-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full xl:hidden flex items-center justify-center shadow absolute top-1/2 right-0 z-[80]"
+      >
+        <svg fill="#000000" width="25px" height="25px" viewBox="0 0 15 15">
+          <path d="M8.29289 2.29289C8.68342 1.90237 9.31658 1.90237 9.70711 2.29289L14.2071 6.79289C14.5976 7.18342 14.5976 7.81658 14.2071 8.20711L9.70711 12.7071C9.31658 13.0976 8.68342 13.0976 8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L11 8.5H1.5C0.947715 8.5 0.5 8.05228 0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H11L8.29289 3.70711C7.90237 3.31658 7.90237 2.68342 8.29289 2.29289Z" />
+        </svg>
+      </div>
       <Swiper
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         onSwiper={(swiper) => {
@@ -95,7 +91,7 @@ const Team = () => {
 
           if (isActive) {
             slideClass +=
-              " z-30 scale-110 -translate-y-4 mt-10 xl:w-[500px] xl:h-[500px] sm:!w-full sm:!w-full mx-5";
+              " z-30 scale-110 -translate-y-4 mt-10 xl:w-[450px] xl:h-[450px] mx-5";
           } else if (isPrev || isNext) {
             slideClass += " z-20 scale-95 translate-y-2 opacity-50 w-2/3 h-2/3";
           } else {
@@ -108,7 +104,7 @@ const Team = () => {
               className="!flex !justify-center !items-center"
             >
               <div
-                className={`${slideClass} overflow-visible xl:w-[400px] w-full relative flex items-center`}
+                className={`${slideClass} overflow-visible xl:w-[350px] w-full relative flex items-center`}
               >
                 <div className="frame-team-left"></div>
                 <img
@@ -122,6 +118,11 @@ const Team = () => {
           );
         })}
       </Swiper>
+      <img
+        src={backgroundTeam}
+        alt="Background"
+        className=" hidden xl:block xl:absolute inset-0 w-full h-full bg-center opacity-50"
+      />
     </div>
   );
 };

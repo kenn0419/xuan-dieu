@@ -3,6 +3,7 @@ import image2 from "../assets/images/feature-icon-2.png";
 import image3 from "../assets/images/feature-icon-3.png";
 import backgroundComponent from "../assets/images/bg-component.jpg";
 import FeatureCard from "./FeatureCard";
+import useInView from "../hook/useInView";
 
 const FeaturesSection = () => {
   const features = [
@@ -29,6 +30,8 @@ const FeaturesSection = () => {
     },
   ];
 
+  const [headingRef, headingInView] = useInView({ threshold: 0.5 }, true);
+
   return (
     <section className="relative" id="service">
       <img
@@ -37,7 +40,14 @@ const FeaturesSection = () => {
         className="absolute inset-0 w-full h-full object-cover opacity-20"
       />
       <div className="xl:w-7xl mx-auto text-center py-20 px-6">
-        <h2 className="text-4xl font-medium text-white mb-10 font-hemi-head">
+        <h2
+          ref={headingRef}
+          className={`relative z-1 text-4xl xl:text-5xl font-medium text-white mb-10 font-hemi-head transition-all duration-1000 ${
+            headingInView
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-10"
+          }`}
+        >
           ĐỊNH VỊ THƯƠNG HIỆU TRUYỀN THÔNG VÀ CÔNG NGHỆ
         </h2>
         <p className="text-base text-gray-300 mb-12 lg:w-[800px] mx-auto">
