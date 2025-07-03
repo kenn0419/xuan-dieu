@@ -41,7 +41,7 @@ const Team = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="">
+    <div className="relative">
       <div
         ref={prevRef}
         className="swiper-button-prev-custom cursor-pointer w-10 h-10 bg-[#87A0BE] rounded-full xl:hidden flex items-center justify-center shadow absolute top-1/2 left-0 z-[80]"
@@ -77,7 +77,7 @@ const Team = () => {
         }}
         centeredSlides={true}
         loop={true}
-        className="!h-[600px] !flex !items-center"
+        className="xl:!h-[700px] !flex !items-center"
         modules={[Navigation, Autoplay, Pagination, EffectCoverflow]}
       >
         {teamMembers.map((member, index) => {
@@ -121,7 +121,7 @@ const Team = () => {
       <img
         src={backgroundTeam}
         alt="Background"
-        className=" hidden xl:block xl:absolute inset-0 w-full h-full bg-center opacity-50"
+        className=" hidden xl:block xl:absolute top-0 left-0 w-full h-full bg-center opacity-50"
       />
     </div>
   );

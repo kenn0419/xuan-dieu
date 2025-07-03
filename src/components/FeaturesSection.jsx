@@ -39,10 +39,10 @@ const FeaturesSection = () => {
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover opacity-20"
       />
-      <div className="xl:w-7xl mx-auto text-center py-20 px-6">
+      <div className="xl:w-7xl mx-auto text-center py-20 px-6 relative z-1">
         <h2
           ref={headingRef}
-          className={`relative z-1 text-4xl xl:text-5xl font-medium text-white mb-10 font-hemi-head transition-all duration-1000 ${
+          className={` text-4xl xl:text-5xl font-medium text-white mb-10 font-hemi-head transition-all duration-1000 ${
             headingInView
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-10"
@@ -50,7 +50,14 @@ const FeaturesSection = () => {
         >
           ĐỊNH VỊ THƯƠNG HIỆU TRUYỀN THÔNG VÀ CÔNG NGHỆ
         </h2>
-        <p className="text-base text-gray-300 mb-12 lg:w-[800px] mx-auto">
+        <p
+          ref={headingRef}
+          className={`text-base text-gray-300 mb-12 lg:w-[800px] mx-auto transition-all duration-1000 ${
+            headingInView
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-10"
+          }`}
+        >
           Xuân Diệu Media mang đến giải pháp truyền thông tổng thể, chiến lược
           marketing số hiệu quả và nội dung báo chí sắc bén, ứng dụng trí tuệ
           nhân tạo để giúp thương hiệu lan tỏa, ghi dấu và phát triển bền vững

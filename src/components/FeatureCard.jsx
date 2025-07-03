@@ -6,7 +6,7 @@ const FeatureCard = ({ feature }) => {
   const [rightRef, rightInView] = useInView({ threshold: 0.5 }, true);
   return (
     <div
-      className={`group relative mx-auto w-full md:w-2/3 xl:w-1/3 lg:h-[550px] bg-gradient-to-tr from-[#2b1e29] to-[#141321] 
+      className={`group relative mx-auto w-full md:w-2/3 xl:w-1/3 xl:h-[600px] bg-gradient-to-tr from-[#2b1e29] to-[#141321] 
                 text-white p-6 pt-20 flex flex-col items-center clip-card transition-all duration-1000 ease-in-out`}
     >
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 rounded-full golden-bar-container">
@@ -33,7 +33,7 @@ const FeatureCard = ({ feature }) => {
       </h3>
       <p
         ref={leftRef}
-        className={`text-base text-gray-300 w-full lg:w-6/7 mx-auto text-center h-[180px] transition-all duration-1000 delay-200 ${
+        className={`text-base text-gray-300 w-full lg:w-6/7 mx-auto text-center h-[200px] xl:h-[160px] transition-all duration-1000 delay-200 ${
           leftInView
             ? "xl:opacity-100 xl:translate-x-0 opacity-100 translate-y-0"
             : "xl:opacity-0 xl:-translate-x-20 opacity-0 -translate-y-20"
