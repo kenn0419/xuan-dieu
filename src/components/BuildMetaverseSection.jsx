@@ -38,6 +38,7 @@ const BuildMetaverseSection = () => {
             autoPlay
             muted
             controls
+            playsInline
             className="xl:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
           >
             <source src={introduceVideo} type="video/mp4" />

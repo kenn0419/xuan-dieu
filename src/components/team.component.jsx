@@ -91,7 +91,7 @@ const Team = () => {
 
           if (isActive) {
             slideClass +=
-              " z-30 scale-110 -translate-y-4 mt-10 xl:w-[500px] xl:h-[450px] mx-5 xl:mx-0";
+              " z-30 scale-110 -translate-y-4 mt-10 xl:w-[500px] xl:h-[500px] mx-5 xl:mx-0";
           } else if (isPrev || isNext) {
             slideClass += " z-20 scale-95 translate-y-4 opacity-50";
             if (isPrev) {
