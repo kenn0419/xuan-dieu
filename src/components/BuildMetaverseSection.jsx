@@ -1,8 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import sectionThumbnail from "../assets/images/Betterimage.ai_1749393457957-removebg-preview.png";
 import TrendingEventsSlider from "./TrendingEventSlider";
 import { useNavigate } from "react-router-dom";
 import backgroundComponent from "../assets/images/bg-component.jpg";
+import introduceVideo from "../assets/videos/introduce-video.mp4";
 import useInView from "../hook/useInView";
 
 const BuildMetaverseSection = () => {
@@ -28,11 +28,20 @@ const BuildMetaverseSection = () => {
               : "opacity-0 -translate-x-10"
           }`}
         >
-          <img
+          {/* <img
             src={sectionThumbnail}
             alt="We Build The Metaverse"
             className="xl:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
-          />
+          /> */}
+          <video
+            loop
+            autoPlay
+            muted
+            controls
+            className="xl:w-[1000px] w-4/5 object-cover rounded-lg shadow-2xl"
+          >
+            <source src={introduceVideo} type="video/mp4" />
+          </video>
         </div>
 
         {/* Right Side - Content */}

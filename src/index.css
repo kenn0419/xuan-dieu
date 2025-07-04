@@ -226,14 +226,14 @@
   content: "";
   width: 3px;
   height: 60%;
-  background-color: #a5c9ec;
+  background-color: #a6c1dc;
 }
 
 .frame-team-left::before,
 .frame-team-left::after,
 .frame-team-right::before,
 .frame-team-right::after {
-  box-shadow: 0 0 10px #ececee, 0 0 20px #085aab;
+  box-shadow: 0 0 10px #eff1f3, 0 0 30px #e8eef5;
 }
 
 #trending-slider::before {

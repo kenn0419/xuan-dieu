@@ -31,7 +31,7 @@ const mediaList = [
     id: 2,
     title: "messenger",
     icon: FaFacebookMessenger,
-    link: "",
+    link: "https://www.facebook.com/messages/t/367628949775883",
   },
   {
     id: 3,
@@ -72,6 +72,7 @@ const AppContent = () => {
             key={media.id}
             className="p-2 bg-gradient-to-br from-red-500 to-orange-300 rounded-full cursor-pointer"
             href={media.title == "phone" ? `tel:${media.link}` : media.link}
+            target="_blank"
           >
             <media.icon color="white" size={25} />
           </a>

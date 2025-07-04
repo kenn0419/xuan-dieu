@@ -91,9 +91,14 @@ const Team = () => {
 
           if (isActive) {
             slideClass +=
-              " z-30 scale-110 -translate-y-4 mt-10 xl:w-[450px] xl:h-[450px] mx-5";
+              " z-30 scale-110 -translate-y-4 mt-10 xl:w-[500px] xl:h-[450px] mx-5 xl:mx-0";
           } else if (isPrev || isNext) {
-            slideClass += " z-20 scale-95 translate-y-2 opacity-50 w-2/3 h-2/3";
+            slideClass += " z-20 scale-95 translate-y-4 opacity-50";
+            if (isPrev) {
+              slideClass += " translate-x-3";
+            } else {
+              slideClass += " -translate-x-3";
+            }
           } else {
             slideClass += " z-10 scale-90 translate-y-6 opacity-60";
           }
@@ -104,7 +109,7 @@ const Team = () => {
               className="!flex !justify-center !items-center"
             >
               <div
-                className={`${slideClass} overflow-visible xl:w-[350px] w-full relative flex items-center`}
+                className={`xl:w-[370px] w-full relative flex items-center ${slideClass}`}
               >
                 <div className="frame-team-left"></div>
                 <img
