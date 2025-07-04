@@ -1,6 +1,5 @@
 import { FaLinkedinIn, FaXing, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import logo from "../assets/images/logo-footer.png";
-import image1 from "../assets/images/XD.jpg";
 import image2 from "../assets/images/XUNI-APP.jpg";
 import image3 from "../assets/images/Logo-Ong-Kinh-01.jpg";
 import image4 from "../assets/images/Gamelade_sign.jpg";
@@ -45,7 +44,12 @@ const Footer = () => {
               <p>90/12 Hà Huy Tập, Thanh Khê Đông, Thanh Khê</p>
               <p>Đà Nẵng 550000, Việt Nam</p>
               <Link to={"/"}>xuandieu.com.vn</Link>
-              <a href="mailto:info@xuandieu.com.vn">info@xuandieu.com.vn</a>
+              <a
+                target="_blank"
+                href="https://mail.google.com/mail/u/0/?fs=1&to=info@xuandieu.com.vn&su=Ti%C3%AAu+%C4%91%E1%BB%81&body=N%E1%BB%99i+dung&tf=cm"
+              >
+                info@xuandieu.com.vn
+              </a>
             </div>
           </div>
         </div>

@@ -19,14 +19,15 @@ import {
   FaPhone,
 } from "react-icons/fa6";
 import { SiGmail, SiZalo } from "react-icons/si";
+import { CgMail } from "react-icons/cg";
 
 const mediaList = [
-  {
-    id: 1,
-    title: "zalo",
-    icon: SiZalo,
-    link: "",
-  },
+  // {
+  //   id: 1,
+  //   title: "zalo",
+  //   icon: SiZalo,
+  //   link: "",
+  // },
   {
     id: 2,
     title: "messenger",
@@ -35,9 +36,9 @@ const mediaList = [
   },
   {
     id: 3,
-    title: "phone",
-    icon: FaPhone,
-    link: "0325563003",
+    title: "gmail",
+    icon: CgMail,
+    link: "https://mail.google.com/mail/u/0/?fs=1&to=info@xuandieu.com.vn&su=Ti%C3%AAu+%C4%91%E1%BB%81&body=N%E1%BB%99i+dung&tf=cm",
   },
 ];
 const AppContent = () => {
@@ -71,10 +72,10 @@ const AppContent = () => {
           <a
             key={media.id}
             className="p-2 bg-gradient-to-br from-red-500 to-orange-300 rounded-full cursor-pointer"
-            href={media.title == "phone" ? `tel:${media.link}` : media.link}
+            href={media.link}
             target="_blank"
           >
-            <media.icon color="white" size={25} />
+            <media.icon color="white" size={30} />
           </a>
         ))}
       </div>
