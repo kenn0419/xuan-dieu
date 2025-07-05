@@ -11,27 +11,31 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-import xuanChinh from "../assets/images/xuan-chinh.jpg";
-import dieuHuyen from "../assets/images/dieu-huyen.jpg";
-import nguyet from "../assets/images/nguyet.jpg";
-import long from "../assets/images/Long.jpg";
-import di from "../assets/images/Di.jpg";
-import bao from "../assets/images/Bao.jpg";
-import vy from "../assets/images/Vy.jpg";
-import nguyen from "../assets/images/Nguyen.jpg";
-import hau from "../assets/images/Hau.jpg";
+import xuanChinhProfile from "../assets/images/team-profile-xuan_chinh.jpg";
+import dieuHuyenProfile from "../assets/images/team-profile-dieu_huyen.jpg";
+import nguyetProfile from "../assets/images/team-profile-nguyet.jpg";
+import longProfile from "../assets/images/team-profile-long.jpg";
+import haDiProfile from "../assets/images/team-profile-ha_di.jpg";
+import baoProfile from "../assets/images/team-profile-bao.jpg";
+import vyProfile from "../assets/images/team-profile-vy.jpg";
+import nguyenProfile from "../assets/images/team-profile-nguyet.jpg";
+import hauProfile from "../assets/images/team-profile-hau.jpg";
+import huyTruongProfile from "../assets/images/team-profile-huy_truong.jpg";
+import haPhuongProfile from "../assets/images/team-profile-ha_phuong.jpg";
 import backgroundTeam from "../assets/images/bg-team.jpg";
 
 const teamMembers = [
-  { id: 1, image: xuanChinh },
-  { id: 2, image: dieuHuyen },
-  { id: 3, image: nguyet },
-  { id: 4, image: long },
-  { id: 5, image: di },
-  { id: 6, image: bao },
-  { id: 7, image: vy },
-  { id: 8, image: nguyen },
-  { id: 9, image: hau },
+  { id: 1, image: xuanChinhProfile },
+  { id: 2, image: dieuHuyenProfile },
+  { id: 3, image: nguyetProfile },
+  { id: 4, image: longProfile },
+  { id: 5, image: haDiProfile },
+  { id: 6, image: baoProfile },
+  { id: 7, image: vyProfile },
+  { id: 8, image: nguyenProfile },
+  { id: 9, image: hauProfile },
+  { id: 10, image: huyTruongProfile },
+  { id: 11, image: haPhuongProfile },
 ];
 
 const Team = () => {
